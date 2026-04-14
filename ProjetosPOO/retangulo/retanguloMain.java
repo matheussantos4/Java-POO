@@ -15,9 +15,9 @@ public class retanguloMain {
         ret1.a = sc.nextDouble();
         ret1.b = sc.nextDouble();
 
-        System.out.printf("AREA:%.2f" + ret1.area());
-        System.out.printf("PERIMETER:%.2f" + ret1.perimeter());
-        System.out.printf("DIAGONAL:%.2f" + ret1.diagonal());
+        System.out.printf("AREA:%.2f", ret1.area());
+        System.out.printf("PERIMETER:%.2f", ret1.perimeter());
+        System.out.printf("DIAGONAL:%.2f", ret1.diagonal());
 
         sc.close();
 
