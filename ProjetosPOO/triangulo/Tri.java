@@ -1,5 +1,8 @@
-package triangulo;
-// Classe destinada a criar o objeto Triângulo.
+package ProjetosPOO.triangulo;
+
+// Classe destinada a criar a instância Triângulo e a função área que
+
+// calcula perímetro e área do triângulo.
 
 public class Tri {
 
