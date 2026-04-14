@@ -9,7 +9,7 @@ public class mainEstoque {
         Scanner sc = new Scanner(System.in);
         Locale.setDefault(Locale.US);
 
-        product product = new product();
+        Product product = new Product();
 
         System.out.println("Enter product data: ");
         System.out.print("Name: ");

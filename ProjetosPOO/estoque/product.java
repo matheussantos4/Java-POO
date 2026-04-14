@@ -1,6 +1,6 @@
 package ProjetosPOO.estoque;
 
-public class product {
+public class Product {
 
     public String name;
     public Double price;
@@ -17,6 +17,17 @@ public class product {
 
     public void removeProduct(int quantitiy) {
         this.quantity -= quantity;
+    }
+
+    public String toString() {
+        return name
+                + ", $"
+                + String.format("%.2f", price)
+                + ", "
+                + quantity
+                + "units, Total: $ "
+                + String.format("%.2f", totalValue());
+
     }
 
 }
