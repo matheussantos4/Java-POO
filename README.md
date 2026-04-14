@@ -52,14 +52,16 @@ Um programa que demonstra os conceitos básicos da POO através da manipulação
 6. Digite as medidas dos dois triângulos quando solicitado
 
 **Exemplo de entrada:**
+
 ```
-Enter the measures of triangle X: 
+Enter the measures of triangle X:
 3 4 5
-Enter the measures of triangle Y: 
+Enter the measures of triangle Y:
 5 5 5
 ```
 
 **Saída esperada:**
+
 ```
 Triangle X area: 6.0000
 Triangle Y area: 10.8253
