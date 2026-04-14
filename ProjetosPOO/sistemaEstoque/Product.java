@@ -1,4 +1,4 @@
-package ProjetosPOO.estoque;
+package ProjetosPOO.sistemaEstoque;
 
 public class Product {
 
@@ -25,7 +25,7 @@ public class Product {
                 + String.format("%.2f", price)
                 + ", "
                 + quantity
-                + "units, Total: $ "
+                + " units, Total: $"
                 + String.format("%.2f", totalValue());
 
     }
