@@ -12,20 +12,21 @@ public class mainSalario {
         funcionario f1 = new funcionario();
 
         System.out.print("Name: ");
-        f1.nome = sc.nextLine();
+        f1.name = sc.nextLine();
         System.out.print("Gross salary: ");
-        f1.salary = sc.nextDouble();
+        f1.GrossSalary = sc.nextDouble();
         System.out.print("Tax: ");
         f1.Tax = sc.nextDouble();
 
-        System.out.println("Employee: " + f1.nome + " $" + f1.NetSalary());
+        System.out.println("Employee: " + f1.name + " $" + f1.NetSalary());
 
-        System.out.print("Which percentage to increase salary ?");
+        System.out.print("Which percentage to increase salary? ");
         f1.percentage = sc.nextDouble();
+        f1.increaseSalary();
 
+        System.out.print("Updated data:" + f1.name + " $" + f1.NetSalary());
 
         sc.close();
 
     }
-
 }

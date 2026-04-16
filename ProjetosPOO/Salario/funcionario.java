@@ -2,14 +2,14 @@ package ProjetosPOO.Salario;
 
 public class funcionario {
 
-    String nome;
-    double salary, Tax, percentage;
+    String name;
+    double GrossSalary, Tax, percentage;
 
     public double NetSalary() {
-        return salary - Tax;
+        return GrossSalary - Tax;
     }
 
     public void increaseSalary() {
-        salary += salary * percentage / 100;
+        GrossSalary += GrossSalary * percentage / 100;
     }
 }
