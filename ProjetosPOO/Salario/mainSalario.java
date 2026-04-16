@@ -18,10 +18,10 @@ public class mainSalario {
         System.out.print("Tax: ");
         f1.Tax = sc.nextDouble();
 
-        System.out.print("Employee: " + f1.nome + " $"+ (f1.salary - f1.Tax));
+        System.out.println("Employee: " + f1.nome + " $" + f1.NetSalary());
 
         System.out.print("Which percentage to increase salary ?");
-        
+        f1.percentage = sc.nextDouble();
 
 
         sc.close();
