@@ -24,7 +24,7 @@ public class mainSalario {
         f1.percentage = sc.nextDouble();
         f1.increaseSalary();
 
-        System.out.print("Updated data:" + f1.name + " $" + f1.NetSalary());
+        System.out.print("Updated data: " + f1.name + " $" + f1.NetSalary());
 
         sc.close();
 

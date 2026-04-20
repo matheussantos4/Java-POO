@@ -13,16 +13,18 @@ public class mainNotas {
         System.out.print("Enter name: ");
         al1.nome = sc.nextLine();
         System.out.print("Notas: ");
-        al1.not1 = sc.nextInt();
-        al1.not2 = sc.nextInt();
-        al1.not3 = sc.nextInt();
+        al1.not1 = sc.nextDouble();
+        al1.not2 = sc.nextDouble();
+        al1.not3 = sc.nextDouble();
         //35+35+30 = 100.
         al1.soma();
+        System.out.print(al1.soma());
 
         if (al1.soma() < 60) {
-            System.out.print("PASSED");
+            System.out.println("\nFAILED");
+            System.out.print("MISSING " + al1.falta() + " POINTS");
 
-        } else System.out.print("FAILED");
+        } else System.out.println("\nPASSED");
 
         sc.close();
 
