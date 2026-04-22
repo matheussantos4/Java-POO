@@ -1,4 +1,4 @@
-package topicosPOO.MembrosEstaticos;
+package topicosPOO.MembrosEstaticos.RaioCirculo;
 
 public class Calculator {
 

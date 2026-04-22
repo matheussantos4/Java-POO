@@ -1,4 +1,4 @@
-package topicosPOO.MembrosEstaticos;
+package topicosPOO.MembrosEstaticos.RaioCirculo;
 
 import java.util.Locale;
 import java.util.Scanner;
