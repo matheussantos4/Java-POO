@@ -16,10 +16,11 @@ public class mainEstoque {
         String name = sc.nextLine();
         System.out.print("Price: ");
         double price = sc.nextDouble();
-        System.out.print("Quantity in stock: ");
-        int quantity = sc.nextInt();
 
-        Product product = new Product(name, price, quantity);
+        Product product = new Product(name, price);
+
+        product.setName("Computer");
+        System.out.println("Updated name: ");
 
         System.out.println();
         System.out.print("Product data:" + product); // toString() da classe sendo chamado aqui

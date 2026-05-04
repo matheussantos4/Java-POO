@@ -2,16 +2,40 @@ package thisEncapsulamentoConstrutores.sistemaEstoque2;
 
 public class Product {
 
-    public String name;
-    public Double price;
-    public int quantity = 0;
+    private String name;
+    private Double price;
+    private int quantity = 0;
 
     public Product(String name, double price, int quantity) {
         this.name = name;
         this.price = price;
         this.quantity = quantity;
-
     }
+
+    public Product(String name, double price) {
+        this.name = name;
+        this.price = price;
+    }
+
+    public Product() {
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getName(String name) {
+        return this.name;
+    }
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
 
     public double totalValue() {
 

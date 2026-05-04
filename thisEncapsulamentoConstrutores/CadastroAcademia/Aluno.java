@@ -1,4 +1,4 @@
-package thisEncapsulamentoConstrutores.sistemaAcademia;
+package thisEncapsulamentoConstrutores.CadastroAcademia;
 
 public class Aluno {
 
