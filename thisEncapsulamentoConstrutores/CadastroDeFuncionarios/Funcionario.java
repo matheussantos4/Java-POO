@@ -20,6 +20,9 @@ public class Funcionario {
     }
 
     public void setsalario(double salario) {
+        if (salario < 1874 || salario > 3200) {
+
+        }
         this.salario = salario;
     }
 
