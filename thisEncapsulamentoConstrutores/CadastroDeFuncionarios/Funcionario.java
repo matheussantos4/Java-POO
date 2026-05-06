@@ -1,4 +1,4 @@
-package thisEncapsulamentoConstrutores.GetterSetter.Ex1;
+package thisEncapsulamentoConstrutores.CadastroDeFuncionarios;
 
 public class Funcionario {
 
@@ -10,19 +10,21 @@ public class Funcionario {
     private int Id;
 
     public void setnome(String nome) {
-        this.nome = nome;
+        if (nome == null || nome.isBlank()) {
+
+        } else this.nome = nome;
     }
 
     public String getnome() {
         return this.nome;
     }
 
-    public double getsalario() {
-        return this.salario;
-    }
-
     public void setsalario(double salario) {
         this.salario = salario;
+    }
+
+    public double getsalario() {
+        return this.salario;
     }
 
     public void setcpf(Long cpf) {
@@ -47,6 +49,10 @@ public class Funcionario {
         this.salario = salario;
         this.cpf = cpf;
         this.Id = contadorID;
+    }
+
+    public Funcionario(String nome) {
+        this.nome = nome;
     }
 
     public void setnewsalario() {
