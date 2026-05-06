@@ -22,8 +22,7 @@ public class Funcionario {
     public void setsalario(double salario) {
         if (salario < 1874 || salario > 3200) {
 
-        }
-        this.salario = salario;
+        } else this.salario = salario;
     }
 
     public double getsalario() {
@@ -31,7 +30,9 @@ public class Funcionario {
     }
 
     public void setcpf(Long cpf) {
-        this.cpf = cpf;
+        if (String.valueOf(cpf).length() != 11) {
+
+        } else this.cpf = cpf;
     }
 
     public Long getcpf() {
