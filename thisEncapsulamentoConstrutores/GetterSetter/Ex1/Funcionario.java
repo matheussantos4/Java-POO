@@ -1,4 +1,4 @@
-package thisEncapsulamentoConstrutores.TreinoClaude.Ex1;
+package thisEncapsulamentoConstrutores.GetterSetter.Ex1;
 
 public class Funcionario {
 
