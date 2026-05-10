@@ -6,7 +6,9 @@ public class ex2Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        
+
+        Aluno a1 = new Aluno("", 0);
+
 
     }
 }
