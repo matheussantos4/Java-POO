@@ -36,7 +36,12 @@ public class Aluno {
 
     public Aluno(String nome, int matricula, double nota) {
         this.nome = nome;
-        this.matricula = matricula;
+        this.nota = nota;
+    }
+
+    public Aluno(String nome, double nota) {
+        this.nome = nome;
         this.nota = nota;
     }
 }
+
