@@ -1,8 +1,8 @@
-package thisEncapsulamentoConstrutores.MediaAlunos;
+package EncapsulamentoConstrutores.MediaAlunos;
 
 public class Aluno {
 
-    private String nome, nomeTurma;
+    private String nome;
     private int matricula;
     private double nota;
 
@@ -32,5 +32,11 @@ public class Aluno {
 
     public double getNota() {
         return nota;
+    }
+
+    public Aluno(String nome, int matricula, double nota) {
+        this.nome = nome;
+        this.matricula = matricula;
+        this.nota = nota;
     }
 }
