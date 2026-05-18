@@ -55,8 +55,16 @@ public class Funcionario {
         this.Id = contadorID;
     }
 
+    public Funcionario(double salario, String nome) {
+        this.salario = salario;
+        this.nome = nome;
+    }
+
     public Funcionario(String nome) {
         this.nome = nome;
+    }
+
+    public Funcionario() {
     }
 
     public void setnewsalario() {
