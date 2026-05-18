@@ -34,14 +34,20 @@ public class Aluno {
         return nota;
     }
 
-    public Aluno(String nome, int matricula, double nota) {
-        this.nome = nome;
-        this.nota = nota;
+    public String getSituacao() {
+        if (nota >= 5) {
+            return "Aprovado";
+        } else {
+            return "Reprovado";
+        }
     }
 
     public Aluno(String nome, double nota) {
-        this.nome = nome;
-        this.nota = nota;
+        setNome(nome);
+        setNota(nota);
+    }
+
+    public Aluno() {
     }
 }
 
