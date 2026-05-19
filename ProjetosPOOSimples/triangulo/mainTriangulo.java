@@ -1,4 +1,4 @@
-package ProjetosPOO.triangulo;
+package ProjetosPOOSimples.triangulo;
 
 import java.util.Scanner;
 import java.util.Locale;

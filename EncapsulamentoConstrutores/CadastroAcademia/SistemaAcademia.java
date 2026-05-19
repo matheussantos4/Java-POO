@@ -1,4 +1,4 @@
-package thisEncapsulamentoConstrutores.CadastroAcademia;
+package EncapsulamentoConstrutores.CadastroAcademia;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package thisEncapsulamentoConstrutores.CadastroDeFuncionarios;
+package EncapsulamentoConstrutores.CadastroDeFuncionarios;
 
 import java.util.Scanner;
 

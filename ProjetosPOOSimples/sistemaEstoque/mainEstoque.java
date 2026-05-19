@@ -1,4 +1,4 @@
-package ProjetosPOO.sistemaEstoque;
+package ProjetosPOOSimples.sistemaEstoque;
 
 import java.util.Locale;
 import java.util.Scanner;

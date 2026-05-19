@@ -1,4 +1,4 @@
-package thisEncapsulamentoConstrutores.CadastroVeiculos;
+package EncapsulamentoConstrutores.CadastroVeiculos;
 
 import java.util.Scanner;
 

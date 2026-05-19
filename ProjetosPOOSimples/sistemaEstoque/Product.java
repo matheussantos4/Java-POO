@@ -1,4 +1,4 @@
-package ProjetosPOO.sistemaEstoque;
+package ProjetosPOOSimples.sistemaEstoque;
 
 public class Product {
 

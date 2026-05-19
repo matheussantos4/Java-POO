@@ -17,7 +17,7 @@ polimorfismo, encapsulamento e abstração.
 
 ```
 Java-POO/
-├── ProjetosPOO/                    # Pasta para projetos práticos em Java
+├── ProjetosPOOSimples/                    # Pasta para projetos práticos em Java
 │   ├── retangulo/                   # Projeto: Cálculo de retângulo
 │   ├── Salario/                     # Projeto: Exemplo de funcionário e salário
 │   ├── sistemaEstoque/              # Projeto: Sistema simples de estoque
@@ -38,7 +38,7 @@ Java-POO/
 
 ## 📦 Projetos Inclusos
 
-### 1. **Triângulo** (`ProjetosPOO/triangulo/`)
+### 1. **Triângulo** (`ProjetosPOOSimples/triangulo/`)
 
 Um programa que demonstra conceitos básicos de POO usando a manipulação de triângulos.
 
@@ -54,7 +54,7 @@ Um programa que demonstra conceitos básicos de POO usando a manipulação de tr
 - Comparação entre áreas
 - Exibição de resultados formatados
 
-### 2. **Retângulo** (`ProjetosPOO/retangulo/`)
+### 2. **Retângulo** (`ProjetosPOOSimples/retangulo/`)
 
 Um exemplo de classe que calcula propriedades geométricas de um retângulo.
 
@@ -69,7 +69,7 @@ Um exemplo de classe que calcula propriedades geométricas de um retângulo.
 - Cálculo de área, perímetro e diagonal
 - Saída formatada dos resultados
 
-### 3. **Salário** (`ProjetosPOO/Salario/`)
+### 3. **Salário** (`ProjetosPOOSimples/Salario/`)
 
 Um exemplo simples de classe para modelar funcionário e salário.
 
@@ -84,7 +84,7 @@ Um exemplo simples de classe para modelar funcionário e salário.
 - Estrutura para entrada de dados via teclado
 - Possível base para cálculos de salário e benefícios
 
-### 4. **Sistema de Estoque** (`ProjetosPOO/sistemaEstoque/`)
+### 4. **Sistema de Estoque** (`ProjetosPOOSimples/sistemaEstoque/`)
 
 Um programa que demonstra como gerenciar informações de um produto em estoque.
 
@@ -100,7 +100,7 @@ Um programa que demonstra como gerenciar informações de um produto em estoque.
 - Adição e remoção de quantidade em estoque
 - Cálculo do valor total do produto em estoque
 
-### 5. **Sistema de Notas** (`ProjetosPOO/sistemaNotas/`)
+### 5. **Sistema de Notas** (`ProjetosPOOSimples/sistemaNotas/`)
 
 Um programa que gerencia notas de alunos e calcula sua média final.
 
@@ -242,11 +242,11 @@ Versão melhorada do sistema de estoque com encapsulamento.
 2. Navegue até a pasta do projeto desejado
 3. Abra em uma IDE Java (Eclipse, IntelliJ IDEA, VS Code com extensões Java)
 4. Compile todos os arquivos Java do projeto escolhido. Exemplo:
-    - `javac ProjetosPOO/triangulo/*.java`
-    - `javac ProjetosPOO/retangulo/*.java`
-    - `javac ProjetosPOO/Salario/*.java`
-    - `javac ProjetosPOO/sistemaEstoque/*.java`
-    - `javac ProjetosPOO/sistemaNotas/*.java`
+    - `javac ProjetosPOOSimples/triangulo/*.java`
+    - `javac ProjetosPOOSimples/retangulo/*.java`
+    - `javac ProjetosPOOSimples/Salario/*.java`
+    - `javac ProjetosPOOSimples/sistemaEstoque/*.java`
+    - `javac ProjetosPOOSimples/sistemaNotas/*.java`
     - `javac EncapsulamentoConstrutores/CadastroAcademia/*.java`
     - `javac EncapsulamentoConstrutores/CadastroDeFuncionarios/*.java`
     - `javac EncapsulamentoConstrutores/CadastroVeiculos/*.java`
@@ -255,15 +255,15 @@ Versão melhorada do sistema de estoque com encapsulamento.
     - `javac topicosPOO/MembrosEstaticos/Dollar/*.java`
     - `javac topicosPOO/MembrosEstaticos/RaioCirculo/*.java`
 5. Execute a classe principal do projeto escolhido. Exemplo:
-    - `java ProjetosPOO.triangulo.mainTriangulo`
-    - `java ProjetosPOO.retangulo.retanguloMain`
-    - `java ProjetosPOO.Salario.mainSalario`
-    - `java ProjetosPOO.sistemaEstoque.mainEstoque`
-    - `java ProjetosPOO.sistemaNotas.mainNotas`
+    - `java ProjetosPOOSimples.triangulo.mainTriangulo`
+    - `java ProjetosPOOSimples.retangulo.retanguloMain`
+    - `java ProjetosPOOSimples.Salario.mainSalario`
+    - `java ProjetosPOOSimples.sistemaEstoque.mainEstoque`
+    - `java ProjetosPOOSimples.sistemaNotas.mainNotas`
     - `java EncapsulamentoConstrutores.CadastroAcademia.SistemaAcademia`
     - `java EncapsulamentoConstrutores.CadastroDeFuncionarios.Ex1main`
     - `java EncapsulamentoConstrutores.CadastroVeiculos.SistemaCadastro`
-    - `java EncapsulamentoConstrutores.MediaAlunos.ex2Main`
+    - `java EncapsulamentoConstrutores.SistemaAlunos.ex2Main`
     - `java EncapsulamentoConstrutores.sistemaEstoque2.mainEstoque`
     - `java topicosPOO.MembrosEstaticos.Dollar.mainDollar`
     - `java topicosPOO.MembrosEstaticos.RaioCirculo.raioCirculo`

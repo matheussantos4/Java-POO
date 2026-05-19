@@ -1,4 +1,4 @@
-package ProjetosPOO.triangulo;
+package ProjetosPOOSimples.triangulo;
 
 // Classe destinada a criar a instância Triângulo e a função área que
 

@@ -1,4 +1,4 @@
-package EncapsulamentoConstrutores.MediaAlunos;
+package EncapsulamentoConstrutores.SistemaAlunos;
 
 import java.util.Scanner;
 

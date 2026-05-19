@@ -1,4 +1,4 @@
-package thisEncapsulamentoConstrutores.CadastroDeFuncionarios;
+package EncapsulamentoConstrutores.CadastroDeFuncionarios;
 
 public class Funcionario {
 

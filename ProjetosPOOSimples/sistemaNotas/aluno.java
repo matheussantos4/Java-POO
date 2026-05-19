@@ -1,4 +1,4 @@
-package ProjetosPOO.sistemaNotas;
+package ProjetosPOOSimples.sistemaNotas;
 
 public class aluno {
 
