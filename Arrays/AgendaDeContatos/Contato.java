@@ -26,12 +26,13 @@ public class Contato {
     }
 
     public void setEmail(String email) {
-        if (email.contains("@"))
-            this.email = email;
+        if (email == null || !email.contains("@")) {
+
+        } else this.email = email;
     }
 
     public Contato(String nome, String email) {
         setNome(nome);
-        this.email = email;
+        setEmail(email);
     }
 }
