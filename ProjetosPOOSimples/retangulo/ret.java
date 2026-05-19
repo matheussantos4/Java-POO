@@ -2,6 +2,8 @@ package ProjetosPOOSimples.retangulo;
 
 public class ret {
 
+    //Fórmulas
+
     public double a, b;
 
     public double area() {
