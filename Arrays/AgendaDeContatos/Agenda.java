@@ -3,7 +3,7 @@ package Arrays.AgendaDeContatos;
 public class Agenda {
 
     private String nomeAgenda;
-    private int totalContatos;
+    private int totalContatos = 0;
 
     private Contato[] listaContatos = new Contato[50];
 
@@ -24,4 +24,12 @@ public class Agenda {
     public void setTotalContatos(int totalContatos) {
         this.totalContatos = totalContatos;
     }
+
+    public void adicionarContato(Contato contato) {
+        if (totalContatos < 50) {
+            listaContatos[totalContatos] = contato;
+            totalContatos++;
+        }
+    }
 }
+
