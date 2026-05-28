@@ -21,7 +21,6 @@ public class Ex3main {
         MinhaAgenda.adicionarContato(c1);
 
         System.out.println(c1.getEmail());
-        System.out.println();
 
     }
 }
