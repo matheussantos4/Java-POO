@@ -20,6 +20,10 @@ public class Ex3main {
                 Contato c = new Contato(sc.nextLine(), sc.nextLine(), sc.nextLine());
                 MinhaAgenda.adicionarContato(c);
                 System.out.println("Contato adicionado!");
+            } else if (opcao == 2) {
+
+                for (int i = 0; i < MinhaAgenda.getTotalContatos(); i++) ;
+
             } else System.out.print("Saindo...");
 
         } while (opcao == 1);
