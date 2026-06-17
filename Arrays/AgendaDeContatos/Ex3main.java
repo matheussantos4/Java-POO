@@ -25,11 +25,22 @@ public class Ex3main {
                     }
                 } while (nome == null || nome.isBlank());
 
+                do {
+                    System.out.print("Telefone: ");
+                    telefone = sc.nextLine();
+                    if (telefone == null || telefone.isBlank() || telefone.length() != 11) {
+                        System.out.println("Telefone inválido.");
+                    }
+                } while ((telefone == null || telefone.isBlank() || telefone.length() != 11));
 
-                System.out.print("Telefone: ");
-                String telefone = sc.nextLine();
-                System.out.print("Email: ");
-                String email = sc.nextLine();
+                do {
+                    System.out.print("Email: ");
+                    email = sc.nextLine();
+                    if (email == null || !email.contains("@")) {
+                        System.out.println("Email inválido.");
+                    }
+
+                } while (email == null || !email.contains("@"));
 
                 Contato c = new Contato(nome, email, telefone);
                 MinhaAgenda.adicionarContato(c);
