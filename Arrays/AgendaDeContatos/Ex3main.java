@@ -9,10 +9,10 @@ public class Ex3main {
 
         Agenda MinhaAgenda = new Agenda();
 
-        Contato c1 = new Contato("Bruno", "11999999999", "brunoburghi@gmail.com");
+        int opcao;
 
         do {
-            System.out.println("Adicionar contato(1) Sair(2)");
+            System.out.println("Adicionar contato(1) Selecionar Contato(2) Sair(3)");
             opcao = sc.nextInt();
             if (opcao == 1) {
                 sc.nextLine();
@@ -27,21 +27,16 @@ public class Ex3main {
                 }
             } else System.out.print("Saindo...");
 
-        } while (opcao == 1);
-
-        System.out.println();
-
+        } while (opcao != 3);
 
         /*do {
             System.out.println("Nome: ");
-            c1.getNome();
 
-        } while (c1.getNome() == null);
 
+        } while (c1.getNome() == null || c1.getNome().isBlank());
 
         MinhaAgenda.adicionarContato(c1);
-
-        System.out.println(c1.getEmail());
+        System.out.println(c1.getEmail());*/
 
     }
 }
