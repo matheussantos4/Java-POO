@@ -17,7 +17,14 @@ public class Ex3main {
             if (opcao == 1) {
                 sc.nextLine();
 
-                Contato c = new Contato(sc.nextLine(), sc.nextLine(), sc.nextLine());
+                System.out.print("Nome: ");
+                String nome = sc.nextLine();
+                System.out.print("Telefone: ");
+                String telefone = sc.nextLine();
+                System.out.print("Email: ");
+                String email = sc.nextLine();
+
+                Contato c = new Contato(nome, email, telefone);
                 MinhaAgenda.adicionarContato(c);
                 System.out.println("Contato adicionado!");
             } else if (opcao == 2) {
