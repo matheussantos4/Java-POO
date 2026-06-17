@@ -13,9 +13,10 @@ public class Ex3main {
 
         do {
             System.out.println("Adicionar contato(1) Selecionar Contato(2) Sair(3)");
-            opcao = sc.nextInt();
-            if (opcao == 1) {
-                sc.nextLine();
+            opcao = sc.nextLine();
+            if (!opcao.equals("1") && !opcao.equals("2") && !opcao.equals("3")) {
+                System.out.println("Opção inválida.");
+            } else if (opcao.equals("1")) {
                 String nome, telefone, email;
                 do {
                     System.out.print("Nome: ");
