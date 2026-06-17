@@ -16,9 +16,16 @@ public class Ex3main {
             opcao = sc.nextInt();
             if (opcao == 1) {
                 sc.nextLine();
+                String nome, telefone, email;
+                do {
+                    System.out.print("Nome: ");
+                    nome = sc.nextLine();
+                    if (nome == null || nome.isBlank()) {
+                        System.out.println("Nome inválido.");
+                    }
+                } while (nome == null || nome.isBlank());
 
-                System.out.print("Nome: ");
-                String nome = sc.nextLine();
+
                 System.out.print("Telefone: ");
                 String telefone = sc.nextLine();
                 System.out.print("Email: ");
