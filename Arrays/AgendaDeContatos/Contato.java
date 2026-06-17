@@ -18,7 +18,9 @@ public class Contato {
     }
 
     public void setTelefone(String telefone) {
-        this.telefone = telefone;
+        if (telefone == null || telefone.isBlank()) {
+        } else if (telefone.length() != 11) {
+        } else this.telefone = telefone;
     }
 
     public String getEmail() {
