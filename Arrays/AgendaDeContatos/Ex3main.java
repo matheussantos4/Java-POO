@@ -21,9 +21,10 @@ public class Ex3main {
                 MinhaAgenda.adicionarContato(c);
                 System.out.println("Contato adicionado!");
             } else if (opcao == 2) {
-
-                for (int i = 0; i < MinhaAgenda.getTotalContatos(); i++) ;
-
+                for (int i = 0; i < MinhaAgenda.getTotalContatos(); i++) {
+                    Contato c = MinhaAgenda.getContato(i);
+                    System.out.println((i + 1) + ". " + c.getNome() + " | " + c.getTelefone() + " | " + c.getEmail());
+                }
             } else System.out.print("Saindo...");
 
         } while (opcao == 1);
