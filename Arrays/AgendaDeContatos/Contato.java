@@ -9,8 +9,9 @@ public class Contato {
     }
 
     public void setNome(String nome) {
-        if (nome == null || nome.isBlank()) {
-        } else this.nome = nome;
+        if (nome != null && !nome.isBlank()) {
+            this.nome = nome;
+        }
     }
 
     public String getTelefone() {
@@ -18,9 +19,20 @@ public class Contato {
     }
 
     public void setTelefone(String telefone) {
-        if (telefone == null || telefone.isBlank()) {
-        } else if (telefone.length() != 11) {
-        } else this.telefone = telefone;
+        if (telefone != null && telefone.length() == 11) {
+            boolean apenasNumeros = true;
+
+            for (int i = 0; i < telefone.length(); i++) {
+                if (!Character.isDigit(telefone.charAt(i))) {
+                    apenasNumeros = false;
+                    break;
+                }
+            }
+
+            if (apenasNumeros) {
+                this.telefone = telefone;
+            }
+        }
     }
 
     public String getEmail() {
@@ -28,12 +40,12 @@ public class Contato {
     }
 
     public void setEmail(String email) {
-        if (email == null || !email.contains("@")) {
-
-        } else this.email = email;
+        if (email != null && email.contains("@")) {
+            this.email = email;
+        }
     }
 
-    public Contato(String nome, String email) {
+    public Contato(String nome, String telefone, String email) {
         setNome(nome);
         setEmail(email);
     }
