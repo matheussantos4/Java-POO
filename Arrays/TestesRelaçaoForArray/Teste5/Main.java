@@ -7,8 +7,9 @@ public class Main {
 
         int maior = numeros[0];
 
-        for (int i = 0; i < numeros.length; i++) {
-
+        for (int i = 0; i < numeros.length; i++)
+        //simples contador para ir passando os elementos do array
+        {
             if (numeros[i] > maior) {
                 maior = numeros[i];
                 System.out.println(maior);
