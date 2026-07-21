@@ -48,5 +48,6 @@ public class Contato {
     public Contato(String nome, String telefone, String email) {
         setNome(nome);
         setEmail(email);
+        setTelefone(telefone);
     }
 }

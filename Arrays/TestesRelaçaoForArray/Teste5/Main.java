@@ -15,7 +15,6 @@ public class Main {
         {
             if (numeros[i] > maior) {
                 maior = numeros[i];
-                System.out.println(maior);
 
                 //Lógica : se o elemento do array for maior que o anterior
                 // iguale com a variável maior e a Printe.

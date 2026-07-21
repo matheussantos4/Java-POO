@@ -1,6 +1,6 @@
-package Arrays.TestesLógicaSimples.Teste1;
+package Arrays.TestesRelaçaoForArray.Teste1;
 
-public class main {
+public class Main {
     static void main(String[] args) {
 
         String[] ListaNomes = new String[6];
@@ -12,9 +12,10 @@ public class main {
         ListaNomes[4] = "Daniel";
         ListaNomes[5] = "Gabriel";
 
-        for (int i = 0; i < ListaNomes.length; i++) {
+        for (int i = 5; i >= 0; i--) {
 
             System.out.println(ListaNomes[i]);
+
         }
     }
 }

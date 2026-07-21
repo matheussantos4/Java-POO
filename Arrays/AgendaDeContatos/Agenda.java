@@ -21,6 +21,10 @@ public class Agenda {
         return totalContatos;
     }
 
+    public Contato getContato(int index) {
+        return listaContatos[index];
+    }
+
     public void setTotalContatos(int totalContatos) {
         this.totalContatos = totalContatos;
     }

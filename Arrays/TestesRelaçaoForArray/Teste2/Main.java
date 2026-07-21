@@ -1,6 +1,6 @@
-package Arrays.TestesLógicaSimples.Teste2;
+package Arrays.TestesRelaçaoForArray.Teste2;
 
-public class main {
+public class Main {
     public static void main(String[] args) {
 
         int[] numeros = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
