@@ -21,5 +21,6 @@ public class Main {
                 // iguale com a variável maior e a Printe.
             }
         }
+        System.out.println(maior);
     }
 }
