@@ -1,15 +1,17 @@
-package Arrays.TestesRelaçaoForArray.Teste3;
+package Arrays.TestesRelaçaoForArray.Teste5;
 
 public class Main {
     public static void main(String[] args) {
 
-        int[] listaDeNum = {1, 3, 6, 8, 2, 9, 4, 7, 10, 5};
+        int[] numeros = {4, 12, 7, 9, 25, 3, 18};
 
-        for (int i = 0; i < listaDeNum.length; i++) {
+        int maior = numeros[0];
 
-            if (listaDeNum[i] > 5) {
+        for (int i = 0; i < numeros.length; i++) {
 
-                System.out.println(listaDeNum[i]);
+            if (numeros[i] > maior) {
+                maior = numeros[i];
+                System.out.println(maior);
             }
         }
     }
