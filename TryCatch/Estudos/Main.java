@@ -1,5 +1,6 @@
 package TryCatch.Estudos;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -20,6 +21,9 @@ public class Main {
 
         } catch (ArithmeticException e) {
             System.out.println("Não é possível dividir por zero !");
+        } catch (InputMismatchException e) {
+            System.out.println("Isso não é um número!");
         }
+        sc.close();
     }
 }
