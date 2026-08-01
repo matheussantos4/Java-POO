@@ -1,4 +1,4 @@
-package Arrays.TestesRelaçaoForArray.Teste5;
+package Arrays.TestesRelaçaoForArray.Teste3;
 
 public class Main {
     public static void main(String[] args) {
