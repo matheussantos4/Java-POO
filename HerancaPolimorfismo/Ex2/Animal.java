@@ -1,6 +1,6 @@
 package HerancaPolimorfismo.Ex2;
 
-public class Animal {
+public abstract class Animal {
     private String nome;
 
     public String getNome() {
@@ -11,16 +11,14 @@ public class Animal {
         this.nome = nome;
     }
 
+    public abstract void emitirSom();
+
     public void comer() {
         System.out.println(getNome() + " está comendo.");
     }
 
     public void respirar() {
         System.out.println(getNome() + " está respirando.");
-    }
-
-    public void emitirSom() {
-        System.out.println(getNome() + "...");
     }
 
     public Animal(String nome) {

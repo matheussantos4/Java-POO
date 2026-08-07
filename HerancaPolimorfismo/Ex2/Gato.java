@@ -8,6 +8,6 @@ public class Gato extends Animal {
     }
 
     public Gato(String nome) {
-        setNome(nome);
+        super(nome);
     }
 }
