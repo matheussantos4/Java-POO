@@ -11,6 +11,8 @@ public abstract class Animal {
         this.nome = nome;
     }
 
+    // metodo abstrato para tornar obrigatório a existencia em outras classes.
+
     public abstract void emitirSom();
 
     public void comer() {
