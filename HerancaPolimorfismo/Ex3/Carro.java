@@ -4,7 +4,6 @@ public class Carro extends Veiculo {
 
     @Override
     public double calcularImposto(int Valor) {
-        double precoReal = Valor;
-        return precoReal * 0.04;
+        return Valor * 0.04;
     }
 }
