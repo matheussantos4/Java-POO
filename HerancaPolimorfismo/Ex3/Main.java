@@ -8,5 +8,13 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
+        Veiculo c1 = new Carro("Monza", 1999);
+        Veiculo m1 = new Moto("Cg160", 2025);
+
+        System.out.println("---------------Calcular imposto---------------");
+        System.out.print("Digite o valor da moto: ");
+        System.out.println(m1.calcularImposto(sc.nextInt()));
+
+
     }
 }
