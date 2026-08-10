@@ -1,81 +1,107 @@
-# Java POO - Programação Orientada a Objetos
+# Java POO
 
-## Apresentação
+## Visão geral
 
-Este repositório reúne exercícios práticos de Java voltados para a Programação Orientada a Objetos. O objetivo é consolidar conceitos como classes, objetos, encapsulamento, construtores, métodos estáticos e uso de arrays.
+Este repositório reúne exercícios, estudos e mini projetos em Java focados em Programação Orientada a Objetos. A ideia é praticar os conceitos fundamentais da linguagem e reforçar a aplicação de classes, objetos, encapsulamento, herança, polimorfismo, coleções, métodos estáticos e tratamento de exceções.
 
-## Objetivo
+## Objetivos
 
-- Praticar os fundamentos da POO em Java
-- Explorar diferentes tipos de algoritmos e estruturas simples
-- Organizar exemplos de estudo em uma base clara e didática
+- Fixar os pilares da POO em Java
+- Praticar lógica de programação com classes e objetos
+- Explorar estruturas como arrays, ArrayList e laços de repetição
+- Estudar herança, polimorfismo e encapsulamento em cenários reais
+- Trabalhar com validação, entrada de dados e erros em execução
 
-## Estrutura resumida
+## Estrutura do repositório
 
-- Projetos simples: triângulo, retângulo, salário, sistema de estoque e sistema de notas
-- Encapsulamento e construtores: cadastro de academia, funcionários, veículos e alunos
-- Arrays e laços: agenda de contatos e exercícios com relação de for/arrays
-- Membros estáticos: conversor de dólar e cálculo de círculo
+### 1. Arrays
 
-## Projetos principais
+Pasta: Arrays
 
-### 1. Triângulo
+Conteúdo:
 
-Componentes: Tri.java e mainTriangulo.java
-Funcionalidades: lê as medidas de dois triângulos, calcula a área com a Fórmula de Heron e compara os resultados.
+- Agenda de Contatos: cadastro, validação e listagem de contatos
+- ArrayList: estudo de coleções dinâmicas
+- ForEach: utilização de laços avançados para percorrer coleções
+- Testes de relação com arrays: exercícios de manipulação e lógica com índices e estruturas de dados
 
-### 2. Retângulo
+### 2. Encapsulamento e construtores
 
-Componentes: ret.java e retanguloMain.java
-Funcionalidades: recebe largura e altura, calcula área, perímetro e diagonal e exibe os valores.
+Pasta: EncapsulamentoConstrutores
 
-### 3. Salário
+Conteúdo:
 
-Componentes: funcionario.java e mainSalario.java
-Funcionalidades: representa um funcionário com nome e salário e serve como base para exercícios de classe e entrada de dados.
+- CadastroAcademia: modelagem de aluno com dados pessoais, plano e cálculo de IMC
+- CadastroDeFuncionarios: exercícios sobre atributos, construtores e dados de funcionários
+- CadastroVeiculos: estudos sobre veículos e atributos de cadastro
+- SistemaAlunos: organização e gestão de alunos em uma turma
 
-### 4. Sistema de Estoque
+### 3. Herança e polimorfismo
 
-Componentes: Product.java e mainEstoque.java
-Funcionalidades: gerencia um produto com nome, preço, quantidade e valor total em estoque.
+Pasta: HerancaPolimorfismo
 
-### 5. Sistema de Notas
+Conteúdo:
 
-Componentes: aluno.java e mainNotas.java
-Funcionalidades: lê notas de um aluno, calcula a soma e a média e mostra o resultado final.
+- Ex1: exemplo com Funcionário e Gerente
+- Ex2: exemplo com Animal, Cachorro e Gato
+- Ex3: exemplo com Veiculo, Carro e Moto, com cálculo de imposto
 
-## Novos algoritmos
+### 4. Projetos simples de POO
 
-### 1. Agenda de Contatos
+Pasta: ProjetosPOOSimples
 
-Componentes: Agenda.java, Contato.java e Ex3main.java
-Funcionalidades: cadastra contatos, valida nome, telefone e e-mail, armazena os dados em um array e permite listar os contatos adicionados.
+Conteúdo:
 
-### 2. Exercícios com For e Arrays
+- retangulo: cálculo de área, perímetro e diagonal
+- Salario: exemplo de classe de funcionário e salário
+- sistemaEstoque: controle de produto e quantidade em estoque
+- sistemaNotas: cálculo de notas e média
+- triangulo: cálculo de área utilizando fórmula de Heron
 
-Componentes: pastas em Arrays/TestesRelaçaoForArray
-Funcionalidades: exploram o uso de laços de repetição, relações entre índices e manipulação de arrays em diferentes cenários práticos.
+### 5. Tópicos avançados de POO
 
-## Conceitos abordados
+Pasta: topicosPOO
+
+Conteúdo:
+
+- MembrosEstaticos/Dollar: conversor de dólar com cálculo de IOF
+- MembrosEstaticos/RaioCirculo: cálculo de área do círculo e uso de atributos/métodos estáticos
+
+### 6. Tratamento de exceções
+
+Pasta: TryCatch
+
+Conteúdo:
+
+- Estudo1: exemplo de divisão com tratamento para ArithmeticException e InputMismatchException
+
+## Conceitos praticados
 
 - Classes e objetos
 - Encapsulamento
-- Construtores e getters/setters
+- Construtores e sobrecarga
+- Getters e setters
+- Herança
+- Polimorfismo
+- Arrays e ArrayList
+- Estruturas de repetição
 - Métodos estáticos
-- Arrays e laços de repetição
-- Organização de programas simples em Java
+- Tratamento de exceções
+- Entrada e saída via console
 
-## Como usar
+## Como executar
 
-1. Abra a pasta do projeto desejado em uma IDE Java.
-2. Compile e execute a classe principal correspondente.
-3. Ajuste os exemplos conforme seu estudo e evolução.
+1. Abra a pasta do exercício ou projeto desejado em uma IDE Java, como IntelliJ IDEA ou VS Code.
+2. Localize a classe principal com o método main.
+3. Compile e execute o arquivo correspondente.
 
 ## Tecnologias
 
-- Linguagem: Java
-- Conceito: Programação Orientada a Objetos
+- Java
+- Programação Orientada a Objetos
+- Java Collections
+- Estruturas básicas de entrada e saída
 
 ---
 
-Última atualização: Julho de 2026
+Última atualização: agosto de 2026
