@@ -7,6 +7,7 @@ public class Carro extends Veiculo implements Financiavel {
         System.out.println("parcelamento");
     }
 
+    // Metodo apenas para calcular imposto.
     @Override
     public double calcularImposto() {
         return (getPreco() * 0.04);
