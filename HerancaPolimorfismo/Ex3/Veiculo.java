@@ -4,6 +4,15 @@ public abstract class Veiculo {
 
     private String modelo, placa;
     private int ano;
+    private double preco;
+
+    public double getPreco() {
+        return preco;
+    }
+
+    public void setPreco(double preco) {
+        this.preco = preco;
+    }
 
     public String getPlaca() {
         return placa;
@@ -29,7 +38,7 @@ public abstract class Veiculo {
         this.modelo = modelo;
     }
 
-    public abstract double calcularImposto(int Valor);
+    public abstract double calcularImposto();
 
     public Veiculo(String modelo, int ano) {
         setAno(ano);
