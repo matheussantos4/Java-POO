@@ -1,6 +1,11 @@
 package HerancaPolimorfismo.Ex3;
 
-public class Carro extends Veiculo {
+public class Carro extends Veiculo implements Financiavel {
+
+    @Override
+    public void simularFinanciamento(int parcelas) {
+        System.out.println("parcelamento");
+    }
 
     @Override
     public double calcularImposto() {
