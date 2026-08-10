@@ -12,9 +12,13 @@ public class Main {
         Veiculo m1 = new Moto("Cg160", 2025);
 
         System.out.println("---------------Calcular imposto---------------");
+        System.out.print("Digite o valor do carro: ");
+        c1.setPreco(sc.nextDouble());
+        double precoC = c1.calcularImposto() + c1.getPreco();
+        System.out.println("Valor com impostos: " + precoC);
         System.out.print("Digite o valor da moto: ");
-        System.out.println(m1.calcularImposto(sc.nextInt()));
-
-
+        m1.setPreco(sc.nextDouble());
+        double precoM = m1.calcularImposto() + m1.getPreco();
+        System.out.println("Valor com impostos: " + precoM);
     }
 }
