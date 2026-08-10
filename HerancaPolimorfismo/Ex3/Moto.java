@@ -2,6 +2,7 @@ package HerancaPolimorfismo.Ex3;
 
 public class Moto extends Veiculo {
 
+    // Metodo apenas para calcular imposto.
     @Override
     public double calcularImposto() {
         return (getPreco() * 0.02);
