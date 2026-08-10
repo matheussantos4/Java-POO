@@ -1,4 +1,4 @@
-package TryCatch.Estudo1;
+package TryCatch.Ex1;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
