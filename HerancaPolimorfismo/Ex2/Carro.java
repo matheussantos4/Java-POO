@@ -1,4 +1,4 @@
-package HerancaPolimorfismo.Ex3;
+package HerancaPolimorfismo.Ex2;
 
 public class Carro extends Veiculo implements Financiavel {
 

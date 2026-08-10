@@ -26,7 +26,7 @@ public class Ex3main {
             } else if (opcao.equals("1")) {
                 String nome, telefone, email;
 
-                // Cada campo tem seu próprio loop de validação: insiste
+                // Cada campo tem seu próprio loop de validação: insiste    
                 // até o usuário digitar algo aceitável, mostrando o motivo
                 // do erro a cada tentativa inválida.
                 do {

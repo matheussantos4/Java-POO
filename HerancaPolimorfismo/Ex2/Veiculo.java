@@ -1,10 +1,11 @@
-package HerancaPolimorfismo.Ex3;
+package HerancaPolimorfismo.Ex2;
 
 public abstract class Veiculo {
 
     private String modelo, placa;
     private int ano;
     private double preco;
+
 
     public double getPreco() {
         return preco;

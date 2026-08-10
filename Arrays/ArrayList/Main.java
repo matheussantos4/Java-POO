@@ -19,6 +19,8 @@ public class Main {
 
         nomes.remove(0);
 
+        System.out.println(nomes.size() <= 0);
+
         System.out.println(nomes.getFirst());
         System.out.println(nomes.getLast());
     }

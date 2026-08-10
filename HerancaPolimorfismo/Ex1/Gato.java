@@ -1,4 +1,4 @@
-package HerancaPolimorfismo.Ex2;
+package HerancaPolimorfismo.Ex1;
 
 public class Gato extends Animal {
 

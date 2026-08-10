@@ -1,4 +1,4 @@
-package HerancaPolimorfismo.Ex2;
+package HerancaPolimorfismo.Ex1;
 
 public abstract class Animal {
     private String nome;
@@ -12,7 +12,6 @@ public abstract class Animal {
     }
 
     // metodo abstrato para tornar obrigatório a existencia em outras classes.
-
     public abstract void emitirSom();
 
     public void comer() {
