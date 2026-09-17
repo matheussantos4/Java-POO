@@ -1,4 +1,4 @@
-package topicosPOO.MembrosEstaticos.Dollar;
+package TopicosPOO.MembrosEstaticos.Dollar;
 
 public class CurrencyConverter {
 

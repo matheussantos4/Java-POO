@@ -2,7 +2,9 @@
 
 ## Visão geral
 
-Este repositório reúne exercícios, estudos e mini projetos em Java focados em Programação Orientada a Objetos. A ideia é praticar os conceitos fundamentais da linguagem e reforçar a aplicação de classes, objetos, encapsulamento, herança, polimorfismo, coleções, métodos estáticos e tratamento de exceções.
+Este repositório reúne exercícios, estudos e mini projetos em Java focados em Programação Orientada a Objetos. A ideia é
+praticar os conceitos fundamentais da linguagem e reforçar a aplicação de classes, objetos, encapsulamento, herança,
+polimorfismo, coleções, métodos estáticos e tratamento de exceções.
 
 ## Objetivos
 
@@ -60,7 +62,7 @@ Conteúdo:
 
 ### 5. Tópicos avançados de POO
 
-Pasta: topicosPOO
+Pasta: TopicosPOO
 
 Conteúdo:
 

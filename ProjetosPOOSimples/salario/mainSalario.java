@@ -1,4 +1,4 @@
-package ProjetosPOOSimples.Salario;
+package ProjetosPOOSimples.salario;
 
 import java.util.Locale;
 import java.util.Scanner;
