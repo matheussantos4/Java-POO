@@ -6,7 +6,10 @@ public enum StatusPedido {
     PRONTO(5),
     ENTREGUE(0);
 
+    private final int minutos;
+
     StatusPedido(int minutos) {
+        this.minutos = minutos;
     }
 }
 
