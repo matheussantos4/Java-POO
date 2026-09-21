@@ -5,14 +5,36 @@ import java.util.ArrayList;
 public class Pedido {
 
     private ArrayList<ItemPedido> itens = new ArrayList<>();
-    private int contador, ID, mesa;
+    private int contador, id, mesa;
+    private StatusPedido status;
 
-    public void adicionarItem(ItemPedido ItemPedido) {
-        itens.add(ItemPedido);
+    public void adicionarItem(ItemPedido itemAdicionar) {
+        itens.add(itemAdicionar);
     }
 
-    public Pedido(int ID, int mesa) {
-        this.ID = ID;
+    public void calcularTotal() {
+
+    }
+
+    public Pedido(int id, int mesa) {
+        this.id = id;
+        this.mesa = mesa;
+        this.status = StatusPedido.RECEBIDO;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public int getMesa() {
+        return mesa;
+    }
+
+    public void setMesa(int mesa) {
         this.mesa = mesa;
     }
 }
