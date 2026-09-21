@@ -13,4 +13,8 @@ public class GerenciadorPedidos {
         }
     }
 
+    public void adicionarPedido(Pedido NovoPedido) {
+        pedidos.add(NovoPedido);
+        contador++;
+    }
 }
