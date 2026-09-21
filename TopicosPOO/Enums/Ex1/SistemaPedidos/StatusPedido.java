@@ -1,4 +1,4 @@
-package TopicosPOO.Enums.Ex1;
+package TopicosPOO.Enums.Ex1.SistemaPedidos;
 
 public enum StatusPedido {
     RECEBIDO(30),
@@ -10,6 +10,10 @@ public enum StatusPedido {
 
     StatusPedido(int minutos) {
         this.minutos = minutos;
+    }
+
+    public int tempoEstimado() {
+        return minutos;
     }
 }
 
