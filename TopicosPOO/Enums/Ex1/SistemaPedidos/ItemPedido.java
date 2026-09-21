@@ -29,6 +29,10 @@ public class ItemPedido {
         this.preco = preco;
     }
 
+    public double subTotal() {
+        return Quantd * preco;
+    }
+
     public ItemPedido(String nome, int Quantd, double preco) {
         this.nome = nome;
         this.Quantd = Quantd;
