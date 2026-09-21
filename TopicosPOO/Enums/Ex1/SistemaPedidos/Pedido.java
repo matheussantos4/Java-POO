@@ -5,15 +5,19 @@ import java.util.ArrayList;
 public class Pedido {
 
     private ArrayList<ItemPedido> itens = new ArrayList<>();
-    private int contador, id, mesa;
+    private int id, mesa;
     private StatusPedido status;
 
     public void adicionarItem(ItemPedido itemAdicionar) {
         itens.add(itemAdicionar);
     }
 
-    public void calcularTotal() {
-
+    public double calcularTotal() {
+        double total = 0;
+        for (int i = 0; i < itens.size(); i++) {
+            total += itens.get(i).subTotal();
+        }
+        return total;
     }
 
     public Pedido(int id, int mesa) {
