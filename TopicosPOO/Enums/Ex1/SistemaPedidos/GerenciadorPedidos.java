@@ -7,4 +7,10 @@ public class GerenciadorPedidos {
     private ArrayList<Pedido> pedidos = new ArrayList<>();
     private int contador = 0;
 
+    public void listarPedido() {
+        for (int i = 0; i < pedidos.size(); i++) {
+            System.out.println(pedidos.get(i).getId());
+        }
+    }
+
 }
