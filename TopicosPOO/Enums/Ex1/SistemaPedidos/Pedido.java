@@ -34,6 +34,18 @@ public class Pedido {
         this.id = id;
     }
 
+    public StatusPedido getStatus() {
+        return status;
+    }
+
+    public void setStatus(StatusPedido status) {
+        this.status = status;
+    }
+
+    public ArrayList<ItemPedido> getItens() {
+        return itens;
+    }
+
     public int getMesa() {
         return mesa;
     }
