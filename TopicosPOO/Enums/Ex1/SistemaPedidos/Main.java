@@ -7,6 +7,12 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("------- Gerenciamento Pedidos -------");
+        System.out.println("(1) Adicionar pedidos");
+        System.out.println("(2) Listar pedidos");
+        System.out.println("(3) Remover pedidos");
+        System.out.println("(4) Modificar pedidos");
+        System.out.println("(5) Encerrar");
+        System.out.println();
         System.out.print("Selecione uma opção: ");
         int opcao = 0;
         do {
