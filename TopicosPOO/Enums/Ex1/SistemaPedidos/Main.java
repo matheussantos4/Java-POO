@@ -7,16 +7,25 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("------- Gerenciamento Pedidos -------");
-        System.out.println("(1) Adicionar pedidos");
-        System.out.println("(2) Listar pedidos");
-        System.out.println("(3) Remover pedidos");
-        System.out.println("(4) Modificar pedidos");
-        System.out.println("(5) Encerrar");
-        System.out.println();
-        System.out.print("Selecione uma opção: ");
+        Pedido n1 = new Pedido(5);
+        Pedido n2 = new Pedido(7);
+
+        GerenciadorPedidos gerenciador = new GerenciadorPedidos();
+        gerenciador.adicionarPedido(n1);
+        gerenciador.adicionarPedido(n2);
+
+
         int opcao = 0;
         do {
+            System.out.println("------- Gerenciamento Pedidos -------");
+            System.out.println("(1) Adicionar pedidos");
+            System.out.println("(2) Listar pedidos");
+            System.out.println("(3) Remover pedidos");
+            System.out.println("(4) Modificar pedidos");
+            System.out.println("(5) Encerrar");
+            System.out.println();
+            System.out.print("Selecione uma opção: ");
+
             do {
                 try {
                     opcao = sc.nextInt();
@@ -35,7 +44,7 @@ public class Main {
             if (opcao == 1) {
 
             } else if (opcao == 2) {
-
+                gerenciador.listarPedidos();
             }
         } while (opcao != 5);
         System.out.println("Saindo...");
