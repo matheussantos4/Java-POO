@@ -20,8 +20,7 @@ public class Pedido {
         return total;
     }
 
-    public Pedido(int id, int mesa) {
-        this.id = id;
+    public Pedido(int mesa) {
         this.mesa = mesa;
         this.status = StatusPedido.RECEBIDO;
     }
