@@ -6,14 +6,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        
+        GerenciadorPedidos gerenciador = new GerenciadorPedidos();
 
+        /* teste
         Pedido n1 = new Pedido(5);
         Pedido n2 = new Pedido(7);
-
-        GerenciadorPedidos gerenciador = new GerenciadorPedidos();
         gerenciador.adicionarPedido(n1);
         gerenciador.adicionarPedido(n2);
-
+        */
 
         int opcao = 0;
         do {
