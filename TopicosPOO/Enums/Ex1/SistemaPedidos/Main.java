@@ -8,10 +8,21 @@ public class Main {
 
         System.out.println("------- Gerenciamento Pedidos -------");
         System.out.print("Selecione uma opção: ");
-        System.out.print("(1) Adicionar pedidos");
-        System.out.print("(2) Listar pedidos");
-        System.out.print("(3) Remover pedidos");
-        System.out.print("(4) Modificar pedidos");
+        int opcao = 0;
+        do {
+            do {
+                try {
+                    opcao = sc.nextInt();
+                    if (opcao <= 0) {
+                        System.out.println("Opção inválida.");
+                    }
+                } catch (InputMismatchException e) {
+                    System.out.println("Opção inválida.");
+                    sc.nextLine();
+                }
+            } while (opcao <= 0 && opcao < 5);
+
+            if (opcao == 1) {
 
     }
 }
