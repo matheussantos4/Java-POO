@@ -1,5 +1,6 @@
 package TopicosPOO.Enums.Ex1.SistemaPedidos;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -19,16 +20,24 @@ public class Main {
             do {
                 try {
                     opcao = sc.nextInt();
-                    if (opcao <= 0) {
+                    if (opcao <= 0 || opcao > 5) {
                         System.out.println("Opção inválida.");
+                        System.out.print("Selecione uma opção: ");
                     }
                 } catch (InputMismatchException e) {
                     System.out.println("Opção inválida.");
                     sc.nextLine();
+                    opcao = 0;
+                    System.out.print("Selecione uma opção: ");
                 }
-            } while (opcao <= 0 && opcao < 5);
+            } while (opcao <= 0 || opcao > 5);
 
             if (opcao == 1) {
 
+            } else if (opcao == 2) {
+
+            }
+        } while (opcao != 5);
+        System.out.println("Saindo...");
     }
 }
