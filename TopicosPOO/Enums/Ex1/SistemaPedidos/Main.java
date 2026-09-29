@@ -42,7 +42,6 @@ public class Main {
                 }
             } while (opcao <= 0 || opcao > 5);
 
-
             if (opcao == 1) {
                 int mesa = 0;
                 do {
@@ -67,11 +66,25 @@ public class Main {
                 gerenciador.listarPedidos();
             } else if (opcao == 3) {
                 int idRemover = 0;
-                do {
-                    System.out.println("Qual pedido desejar remover?");
-                    gerenciador.listarPedidos();
-                    idRemover = sc.nextInt();
-                } while (idRemover < 0);
+                if (gerenciador.pedidoVazioVerif()) {
+                } else {
+                    do {
+                        System.out.println("Qual pedido desejar remover?");
+                        gerenciador.listarPedidos();
+                        System.out.print("Digite o ID:");
+                        try {
+                            idRemover = sc.nextInt();
+                        } catch (InputMismatchException e) {
+                            System.out.println("ID inválido.");
+                            sc.nextLine();
+                            idRemover = 0;
+                        }
+                    } while (idRemover < 0);
+                    if (gerenciador.removerPedido(idRemover)) {
+                        System.out.println("Pedido removido!");
+                    } else
+                        System.out.println("Pedido não encontrado.");
+                }
             }
         } while (opcao != 5);
         System.out.println("Saindo...");
