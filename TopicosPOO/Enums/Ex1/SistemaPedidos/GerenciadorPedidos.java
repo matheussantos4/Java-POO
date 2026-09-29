@@ -17,6 +17,14 @@ public class GerenciadorPedidos {
         }
     }
 
+    public void removerPedido(int id) {
+        for (int i = 0; i < pedidos.size(); i++) {
+            if (pedidos.get(i).getMesa() == id) {
+                pedidos.remove(i);
+            }
+        }
+    }
+
     public void adicionarPedido(Pedido NovoPedido) {
         pedidos.add(NovoPedido);
         NovoPedido.setId(contador);
