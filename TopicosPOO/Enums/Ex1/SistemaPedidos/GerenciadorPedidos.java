@@ -8,15 +8,14 @@ public class GerenciadorPedidos {
     private int contador = 1;
 
     public void listarPedidos() {
-        for (int i = 0; i < pedidos.size(); i++) {
-            if (pedidos.isEmpty()) {
-                System.out.println("Não há pedidos.");
-            } else {
+        if (pedidos.isEmpty()) {
+            System.out.println("Não há pedidos.");
+        } else
+            for (int i = 0; i < pedidos.size(); i++) {
                 System.out.printf("PEDIDO Nº:" + pedidos.get(i).getId() + " Mesa " + pedidos.get(i).getMesa() + "%n");
             }
-        }
     }
-
+    
     public void adicionarPedido(Pedido NovoPedido) {
         pedidos.add(NovoPedido);
         NovoPedido.setId(contador);
