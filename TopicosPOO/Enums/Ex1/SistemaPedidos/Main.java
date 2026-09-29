@@ -65,6 +65,13 @@ public class Main {
 
             } else if (opcao == 2) {
                 gerenciador.listarPedidos();
+            } else if (opcao == 3) {
+                int idRemover = 0;
+                do {
+                    System.out.println("Qual pedido desejar remover?");
+                    gerenciador.listarPedidos();
+                    idRemover = sc.nextInt();
+                } while (idRemover < 0);
             }
         } while (opcao != 5);
         System.out.println("Saindo...");
