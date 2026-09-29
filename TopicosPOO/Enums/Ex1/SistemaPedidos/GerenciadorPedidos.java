@@ -9,7 +9,11 @@ public class GerenciadorPedidos {
 
     public void listarPedidos() {
         for (int i = 0; i < pedidos.size(); i++) {
-            System.out.printf("PEDIDO Nº: " + pedidos.get(i).getId() + "%n");
+            if (pedidos.isEmpty()) {
+                System.out.println("Não há pedidos.");
+            } else {
+                System.out.printf("PEDIDO Nº:" + pedidos.get(i).getId() + " Mesa " + pedidos.get(i).getMesa() + "%n");
+            }
         }
     }
 
