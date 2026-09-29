@@ -18,15 +18,19 @@ public class GerenciadorPedidos {
     }
 
     public boolean removerPedido(int id) {
+        for (int i = 0; i < pedidos.size(); i++) {
+            if (pedidos.get(i).getId() == id) {
+                pedidos.remove(i);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean pedidoVazioVerif() {
         if (pedidos.isEmpty()) {
             System.out.println("Não há pedidos.");
-        } else {
-            for (int i = 0; i < pedidos.size(); i++) {
-                if (pedidos.get(i).getId() == id) {
-                    pedidos.remove(i);
-                    return true;
-                }
-            }
+            return true;
         }
         return false;
     }
