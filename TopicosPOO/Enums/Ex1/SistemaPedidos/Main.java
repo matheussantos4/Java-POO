@@ -9,12 +9,12 @@ public class Main {
 
         GerenciadorPedidos gerenciador = new GerenciadorPedidos();
 
-        /* teste
+        /*
+
         Pedido n1 = new Pedido(5);
         Pedido n2 = new Pedido(7);
         gerenciador.adicionarPedido(n1);
-        gerenciador.adicionarPedido(n2);
-        */
+        gerenciador.adicionarPedido(n2); */
 
         int opcao = 0;
         do {
@@ -49,17 +49,19 @@ public class Main {
                     try {
                         System.out.print("Digite o Nº da mesa: ");
                         mesa = sc.nextInt();
-                        if (mesa < 0) {
+                        if (mesa < 0 || mesa > 50) {
                             System.out.println("Mesa inválida.");
                         }
                     } catch (InputMismatchException e) {
                         System.out.println("Mesa inválida.");
                         sc.nextLine();
+                        mesa = 0;
                     }
-                    Pedido pedidoNovo = new Pedido(mesa);
-                    gerenciador.adicionarPedido(pedidoNovo);
+                } while (mesa < 0 || mesa > 50);
 
-                } while (mesa < 0);
+                Pedido pedidoNovo = new Pedido(mesa);
+                gerenciador.adicionarPedido(pedidoNovo);
+                System.out.println("Pedido adicionado!");
 
             } else if (opcao == 2) {
                 gerenciador.listarPedidos();
