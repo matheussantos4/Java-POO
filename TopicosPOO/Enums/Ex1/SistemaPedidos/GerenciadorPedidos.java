@@ -17,12 +17,18 @@ public class GerenciadorPedidos {
         }
     }
 
-    public void removerPedido(int id) {
-        for (int i = 0; i < pedidos.size(); i++) {
-            if (pedidos.get(i).getMesa() == id) {
-                pedidos.remove(i);
+    public boolean removerPedido(int id) {
+        if (pedidos.isEmpty()) {
+            System.out.println("Não há pedidos.");
+        } else {
+            for (int i = 0; i < pedidos.size(); i++) {
+                if (pedidos.get(i).getId() == id) {
+                    pedidos.remove(i);
+                    return true;
+                }
             }
         }
+        return false;
     }
 
     public void adicionarPedido(Pedido NovoPedido) {
