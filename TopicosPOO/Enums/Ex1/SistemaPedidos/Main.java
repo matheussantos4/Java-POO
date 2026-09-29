@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+
         GerenciadorPedidos gerenciador = new GerenciadorPedidos();
 
         /* teste
@@ -42,7 +42,24 @@ public class Main {
                 }
             } while (opcao <= 0 || opcao > 5);
 
+
             if (opcao == 1) {
+                int mesa = 0;
+                do {
+                    try {
+                        System.out.print("Digite o Nº da mesa: ");
+                        mesa = sc.nextInt();
+                        if (mesa < 0) {
+                            System.out.println("Mesa inválida.");
+                        }
+                    } catch (InputMismatchException e) {
+                        System.out.println("Mesa inválida.");
+                        sc.nextLine();
+                    }
+                    Pedido pedidoNovo = new Pedido(mesa);
+                    gerenciador.adicionarPedido(pedidoNovo);
+
+                } while (mesa < 0);
 
             } else if (opcao == 2) {
                 gerenciador.listarPedidos();
