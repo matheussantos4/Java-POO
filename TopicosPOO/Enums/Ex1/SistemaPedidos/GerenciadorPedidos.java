@@ -40,4 +40,15 @@ public class GerenciadorPedidos {
         NovoPedido.setId(contador);
         contador++;
     }
+
+    public boolean verificarDuplicata(Pedido pedidoNovo) {
+        for (int i = 0; i < pedidos.size(); i++) {
+            if (pedidos.get(i).getMesa() == pedidoNovo.getMesa()) {
+                System.out.println("Mesa ocupada.");
+                return true;
+            }
+        }
+        return false;
+    }
 }
+
