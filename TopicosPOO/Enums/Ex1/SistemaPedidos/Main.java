@@ -9,12 +9,11 @@ public class Main {
 
         GerenciadorPedidos gerenciador = new GerenciadorPedidos();
 
-        /*
 
         Pedido n1 = new Pedido(5);
         Pedido n2 = new Pedido(7);
         gerenciador.adicionarPedido(n1);
-        gerenciador.adicionarPedido(n2); */
+        gerenciador.adicionarPedido(n2);
 
         int opcao = 0;
         do {
@@ -85,6 +84,20 @@ public class Main {
                     } else
                         System.out.println("Pedido não encontrado.");
                 }
+            } else if (opcao == 4) {
+                int newPedido = 0;
+                do {
+                    if (gerenciador.pedidoVazioVerif()) {
+                    } else {
+                        gerenciador.listarPedidos();
+                        System.out.print("Pedido a modificar:");
+                        try {
+                            newPedido = sc.nextInt();
+                        } catch (InputMismatchException e) {
+                            System.out.println("Pedido inválido.");
+                        }
+                    }
+                } while (newPedido < 0);
             }
         } while (opcao != 5);
         System.out.println("Saindo...");
