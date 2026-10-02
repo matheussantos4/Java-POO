@@ -58,8 +58,11 @@ public class Main {
                 } while (mesa < 0 || mesa > 50);
 
                 Pedido pedidoNovo = new Pedido(mesa);
-                gerenciador.adicionarPedido(pedidoNovo);
-                System.out.println("Pedido adicionado!");
+                if (gerenciador.verificarDuplicata(pedidoNovo)) {
+                } else {
+                    gerenciador.adicionarPedido(pedidoNovo);
+                    System.out.println("Pedido adicionado!");
+                }
 
             } else if (opcao == 2) {
                 gerenciador.listarPedidos();
