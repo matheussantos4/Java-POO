@@ -99,6 +99,13 @@ public class Main {
                         } catch (InputMismatchException e) {
                             System.out.println("Pedido inválido.");
                         }
+                        Pedido pedido = gerenciador.buscarPedido(newPedido);
+                        if (pedido != null) {
+
+                        } else {
+                            System.out.println("Pedido não encontrado.");
+                        }
+
                     }
                 } while (newPedido < 0);
             }
