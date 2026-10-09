@@ -35,6 +35,15 @@ public class GerenciadorPedidos {
         return false;
     }
 
+    public Pedido buscarPedido(int ID) {
+        for (int i = 0; i < pedidos.size(); i++) {
+            if (pedidos.get(i).getId() == ID) {
+                return pedidos.get(i);
+            }
+        }
+        return null;
+    }
+
     public void adicionarPedido(Pedido NovoPedido) {
         pedidos.add(NovoPedido);
         NovoPedido.setId(contador);
