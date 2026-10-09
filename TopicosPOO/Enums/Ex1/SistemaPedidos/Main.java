@@ -108,6 +108,13 @@ public class Main {
 
                     }
                 } while (newPedido < 0);
+                
+                Pedido pedido = gerenciador.buscarPedido(newPedido);
+                if (pedido != null) {
+
+                } else {
+                    System.out.println("Pedido não encontrado.");
+                }
             }
         } while (opcao != 5);
         System.out.println("Saindo...");
