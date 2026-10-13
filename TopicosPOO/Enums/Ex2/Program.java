@@ -24,6 +24,21 @@ public class Program {
             System.out.print("Email: ");
             email = sc.nextLine();
         } while (email.isBlank());
+        */
+        Date birthDate;
+        String data;
+        do {
+            System.out.print("Birth date (DD/MM/YYYY): ");
+            data = sc.nextLine();
+            SimpleDateFormat sdf = new SimpleDateFormat("(dd/MM/yyyy)");
+            try {
+                birthDate = sdf.parse(data);
+            } catch (ParseException e) {
+                System.out.println("Data inválida.");
+                sc.nextLine();
+            }
+
+        } while (data.isBlank());
 
         sc.close();
     }
