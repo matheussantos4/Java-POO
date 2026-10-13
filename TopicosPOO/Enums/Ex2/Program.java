@@ -1,14 +1,30 @@
 package TopicosPOO.Enums.Ex2;
 
+import java.util.Scanner;
 import java.util.Date;
 
 public class Program {
 
     public static void main(String[] args) {
 
-        Order order = new Order(1080, new Date(), OrderStatus.PENDING_PAYMENT);
+        Scanner sc = new Scanner(System.in);
 
-        System.out.println(order);
+        /*Order order = new Order(1080, new Date(), OrderStatus.PENDING_PAYMENT);
+        System.out.println(order); */
 
+        String NameClient;
+        do {
+            System.out.print("Enter client data: ");
+            NameClient = sc.nextLine();
+        }
+        while (NameClient.isBlank());
+
+        String email;
+        do {
+            System.out.print("Email: ");
+            email = sc.nextLine();
+        } while (email.isBlank());
+
+        sc.close();
     }
 }
