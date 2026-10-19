@@ -1,5 +1,7 @@
 package TopicosPOO.Enums.Ex2;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Scanner;
 import java.util.Date;
 
@@ -14,7 +16,8 @@ public class Program {
 
         String NameClient;
         do {
-            System.out.print("Enter client data: ");
+            System.out.println("Enter client data: ");
+            System.out.print("Name: ");
             NameClient = sc.nextLine();
         }
         while (NameClient.isBlank());
@@ -24,18 +27,17 @@ public class Program {
             System.out.print("Email: ");
             email = sc.nextLine();
         } while (email.isBlank());
-        */
-        Date birthDate;
+
+        Date birthDate = null;
         String data;
         do {
             System.out.print("Birth date (DD/MM/YYYY): ");
             data = sc.nextLine();
-            SimpleDateFormat sdf = new SimpleDateFormat("(dd/MM/yyyy)");
+            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
             try {
                 birthDate = sdf.parse(data);
             } catch (ParseException e) {
                 System.out.println("Data inválida.");
-                sc.nextLine();
             }
         } while (birthDate == null);
 
@@ -51,7 +53,9 @@ public class Program {
             }
         } while (status == null);
 
-        } while (data.isBlank());
+        System.out.println("How many itens to this order?");
+        int quantity = sc.nextInt();
+
 
         sc.close();
     }
