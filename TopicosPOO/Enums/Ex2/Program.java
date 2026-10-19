@@ -37,6 +37,19 @@ public class Program {
                 System.out.println("Data inválida.");
                 sc.nextLine();
             }
+        } while (birthDate == null);
+
+        System.out.println("Enter order data: ");
+        OrderStatus status = null;
+        do {
+            System.out.print("Status: ");
+            String texto = sc.nextLine();
+            try {
+                status = OrderStatus.valueOf(texto.toUpperCase());
+            } catch (IllegalArgumentException e) {
+                System.out.println("Status inválido.");
+            }
+        } while (status == null);
 
         } while (data.isBlank());
 
