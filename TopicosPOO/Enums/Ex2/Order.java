@@ -1,27 +1,20 @@
 package TopicosPOO.Enums.Ex2;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 public class Order {
-    private Integer ID;
     private Date moment;
     private OrderStatus status;
+
+    private ArrayList<OrderItem> items = new ArrayList<>();
 
     public Order() {
     }
 
-    public Order(Integer ID, Date moment, OrderStatus status) {
-        this.ID = ID;
+    public Order(Date moment, OrderStatus status) {
         this.moment = moment;
         this.status = status;
-    }
-
-    public Integer getID() {
-        return ID;
-    }
-
-    public void setID(Integer ID) {
-        this.ID = ID;
     }
 
     public Date getMoment() {
@@ -40,11 +33,14 @@ public class Order {
         this.status = status;
     }
 
+    public void addItem(OrderItem e) {
+        items.add(e);
+    }
+
     @Override
     public String toString() {
         return "Order{" +
-                "ID=" + ID +
-                ", moment=" + moment +
+                " moment=" + moment +
                 ", status=" + status +
                 '}';
     }
