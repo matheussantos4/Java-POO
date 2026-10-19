@@ -54,7 +54,25 @@ public class Program {
         } while (status == null);
 
         System.out.println("How many itens to this order?");
-        int quantity = sc.nextInt();
+        int n = sc.nextInt();
+        sc.nextLine();
+
+        Order ord = new Order();
+        for (int i = 0; i < n; i++) {
+            System.out.print("Product name: ");
+            String pName = sc.nextLine();
+            System.out.println("Product price: ");
+            double price = sc.nextDouble();
+
+            Product newProduct = new Product(pName, price);
+
+            System.out.println("Quantity: ");
+            Integer nProd = sc.nextInt();
+
+            OrderItem nO = new OrderItem(newProduct, nProd, price);
+            Order ord = new Order();
+            ord.addItem(nO);
+        }
 
 
         sc.close();
