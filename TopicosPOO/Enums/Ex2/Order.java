@@ -33,8 +33,22 @@ public class Order {
         this.status = status;
     }
 
-    public void addItem(OrderItem e) {
-        items.add(e);
+    public void addItem(OrderItem item) {
+        items.add(item);
+    }
+
+    public void allItens() {
+        for (int i = 0; i < items.size(); i++) {
+            System.out.println(items.get(i));
+        }
+    }
+
+    public double total() {
+        double total = 0;
+        for (int i = 0; i < items.size(); i++) {
+            total += items.get(i).subTotal();
+        }
+        return total;
     }
 
     @Override
