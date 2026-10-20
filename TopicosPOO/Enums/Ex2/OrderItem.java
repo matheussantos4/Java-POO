@@ -20,7 +20,29 @@ public class OrderItem {
         this.price = price;
     }
 
-    public OrderItem(Integer quantity, double price) {
+    public double subTotal() {
+        return price * quantity;
+    }
+
+    public Product getProduct() {
+        return product;
+    }
+
+    public void setProduct(Product product) {
+        this.product = product;
+    }
+
+
+    @Override
+    public String toString() {
+        return
+                product.getName() + ", " +
+                        "Quantity: " + quantity +
+                        ", Price: $" + price + " Subtotal: " + "$" + subTotal();
+
+    }
+
+    public OrderItem(Product product, Integer quantity, double price) {
         this.quantity = quantity;
         this.price = price;
     }
