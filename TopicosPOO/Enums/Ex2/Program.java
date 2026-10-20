@@ -11,6 +11,8 @@ public class Program {
 
         Scanner sc = new Scanner(System.in);
 
+        Order o = new Order();
+
         /*Order order = new Order(1080, new Date(), OrderStatus.PENDING_PAYMENT);
         System.out.println(order); */
 
@@ -30,10 +32,11 @@ public class Program {
 
         Date birthDate = null;
         String data;
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
         do {
             System.out.print("Birth date (DD/MM/YYYY): ");
             data = sc.nextLine();
-            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
             try {
                 birthDate = sdf.parse(data);
             } catch (ParseException e) {
@@ -57,23 +60,36 @@ public class Program {
         int n = sc.nextInt();
         sc.nextLine();
 
-        Order ord = new Order();
+        Date ordDate;
+        Order ord = new Order(new Date(), status);
+
+        SimpleDateFormat sdf2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+
         for (int i = 0; i < n; i++) {
             System.out.print("Product name: ");
             String pName = sc.nextLine();
-            System.out.println("Product price: ");
+            System.out.print("Product price: ");
             double price = sc.nextDouble();
 
             Product newProduct = new Product(pName, price);
 
-            System.out.println("Quantity: ");
+            System.out.print("Quantity: ");
             Integer nProd = sc.nextInt();
 
             OrderItem nO = new OrderItem(newProduct, nProd, price);
-            Order ord = new Order();
             ord.addItem(nO);
+            sc.nextLine();
         }
 
+        System.out.println("ORDER SUMMARY: ");
+        System.out.print("Order Moment: ");
+        System.out.println(sdf2.format(ord.getMoment()));
+        System.out.print("Order Status: ");
+        System.out.println(status);
+        System.out.println("Client: " + NameClient + " " + data + " - " + email);
+        System.out.println("Order items:");
+        ord.allItens();
+        System.out.println("Total price: $" + ord.total());
 
         sc.close();
     }
