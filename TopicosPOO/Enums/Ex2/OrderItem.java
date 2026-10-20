@@ -1,8 +1,9 @@
 package TopicosPOO.Enums.Ex2;
 
 public class OrderItem {
-    Integer quantity;
-    double price;
+    private Integer quantity;
+    private Double price;
+    private Product product;
 
     public Integer getQuantity() {
         return quantity;
@@ -45,5 +46,6 @@ public class OrderItem {
     public OrderItem(Product product, Integer quantity, double price) {
         this.quantity = quantity;
         this.price = price;
+        this.product = product;
     }
 }
