@@ -116,9 +116,21 @@ public class Main {
                 Pedido pedido = gerenciador.buscarPedido(newPedido);
 
                 if (pedido != null) {
-                    System.out.println("(1) Adicionar item");
-                    System.out.println("(2) Avançar status");
-                    System.out.println("(3) Voltar");
+                    int opPedido = 0;
+                    do {
+                        System.out.println("(1) Adicionar item");
+                        System.out.println("(2) Avançar status");
+                        System.out.println("(3) Voltar");
+                        System.out.println();
+                        System.out.print("Selecione uma opção: ");
+                        try {
+                            opPedido = sc.nextInt();
+                        } catch (InputMismatchException e) {
+                            System.out.println("Opção inválida.");
+                            sc.nextLine();
+                            opPedido = 0;
+                        }
+                        if (opPedido == 1) {
 
                 } else {
                     System.out.println("Pedido não encontrado.");
