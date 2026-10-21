@@ -15,5 +15,18 @@ public enum StatusPedido {
     public int tempoEstimado() {
         return minutos;
     }
+
+    public StatusPedido proximo() {
+        switch (this) {
+            case RECEBIDO:
+                return EM_PREPARO;
+            case EM_PREPARO:
+                return PRONTO;
+            case PRONTO:
+                return ENTREGUE;
+        }
+        return this;
+
+    }
 }
 
