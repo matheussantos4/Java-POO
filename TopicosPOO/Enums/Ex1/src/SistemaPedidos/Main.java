@@ -1,6 +1,4 @@
-package TopicosPOO.Enums.Ex1.SistemaPedidos;
-
-import org.w3c.dom.ls.LSOutput;
+package TopicosPOO.Enums.Ex1.src.SistemaPedidos;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -103,7 +101,7 @@ public class Main {
                         }
                     }
                 } while (newPedido < 0);
-                
+
                 Pedido pedido = gerenciador.buscarPedido(newPedido);
                 if (pedido != null) {
 

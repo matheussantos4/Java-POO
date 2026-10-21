@@ -1,4 +1,4 @@
-package TopicosPOO.Enums.Ex1.SistemaPedidos;
+package TopicosPOO.Enums.Ex1.src.SistemaPedidos;
 
 public enum StatusPedido {
     RECEBIDO(30),

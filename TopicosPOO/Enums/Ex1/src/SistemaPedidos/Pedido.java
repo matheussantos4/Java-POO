@@ -1,4 +1,4 @@
-package TopicosPOO.Enums.Ex1.SistemaPedidos;
+package TopicosPOO.Enums.Ex1.src.SistemaPedidos;
 
 import java.util.ArrayList;
 
@@ -14,8 +14,8 @@ public class Pedido {
 
     public double calcularTotal() {
         double total = 0;
-        for (int i = 0; i < itens.size(); i++) {
-            total += itens.get(i).subTotal();
+        for (ItemPedido item : itens) {
+            total += item.subTotal();
         }
         return total;
     }
