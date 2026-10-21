@@ -12,7 +12,7 @@ public class GerenciadorPedidos {
             System.out.println("Não há pedidos.");
         } else {
             for (Pedido pedido : pedidos) {
-                System.out.printf("Nº:" + pedido.getId() + " Mesa " + pedido.getMesa() + "%n");
+                System.out.printf("Nº:" + pedido.getId() + " Mesa " + pedido.getMesa() + " " + pedido.getStatus() + "%n");
             }
         }
     }
