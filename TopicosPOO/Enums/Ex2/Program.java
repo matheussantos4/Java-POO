@@ -44,6 +44,7 @@ public class Program {
             }
         } while (birthDate == null);
 
+
         System.out.println("Enter order data: ");
         OrderStatus status = null;
         do {
@@ -61,7 +62,8 @@ public class Program {
         sc.nextLine();
 
         Date ordDate;
-        Order ord = new Order(new Date(), status);
+        Client newClient = new Client(NameClient, email, birthDate);
+        Order ord = new Order(new Date(), status, newClient);
 
         SimpleDateFormat sdf2 = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
@@ -86,10 +88,10 @@ public class Program {
         System.out.println(sdf2.format(ord.getMoment()));
         System.out.print("Order Status: ");
         System.out.println(status);
-        System.out.println("Client: " + NameClient + " " + data + " - " + email);
+        System.out.println("Client: " + NameClient + " (" + data + ") - " + email);
         System.out.println("Order items:");
         ord.allItens();
-        System.out.println("Total price: $" + ord.total());
+        System.out.printf("Total price: $ %.2f%n", ord.total());
 
         sc.close();
     }
