@@ -132,6 +132,13 @@ public class Main {
                         }
                         if (opPedido == 1) {
 
+                        } else if (opPedido == 2) {
+                            StatusPedido anterior = pedido.getStatus();
+                            System.out.println("Status atual: " + pedido.getStatus());
+                            pedido.setStatus(anterior.proximo());
+                            System.out.println("Status: " + anterior + " -> " + pedido.getStatus());
+                        }
+                    } while (opPedido != 3);
                 } else {
                     System.out.println("Pedido não encontrado.");
                 }
