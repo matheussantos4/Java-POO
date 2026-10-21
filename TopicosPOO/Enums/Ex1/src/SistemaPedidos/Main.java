@@ -104,7 +104,7 @@ public class Main {
                     if (gerenciador.pedidoVazioVerif()) {
                     } else {
                         gerenciador.listarPedidos();
-                        System.out.print("Pedido a modificar:");
+                        System.out.print("Nº Pedido a modificar: ");
                         try {
                             newPedido = sc.nextInt();
                         } catch (InputMismatchException e) {
