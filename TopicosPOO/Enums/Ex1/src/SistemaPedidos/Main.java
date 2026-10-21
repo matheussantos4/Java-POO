@@ -17,6 +17,8 @@ public class Main {
 
         int opcao = 0;
         do {
+
+            // Menu inicial do usuário.
             System.out.println("------- Gerenciamento Pedidos -------");
             System.out.println("(1) Adicionar pedidos");
             System.out.println("(2) Listar pedidos");
@@ -26,6 +28,7 @@ public class Main {
             System.out.println();
             System.out.print("Selecione uma opção: ");
 
+            // Validação inical da entrada de dados da opção.
             do {
                 try {
                     opcao = sc.nextInt();
@@ -41,6 +44,7 @@ public class Main {
                 }
             } while (opcao <= 0 || opcao > 5);
 
+            // Validação da entrada de dados do número da mesa.
             if (opcao == 1) {
                 int mesa = 0;
                 do {
@@ -57,6 +61,7 @@ public class Main {
                     }
                 } while (mesa < 0 || mesa > 50);
 
+                // Adição de pedidos a lista caso a mesa esteja de acordo.
                 Pedido pedidoNovo = new Pedido(mesa);
                 if (gerenciador.verificarDuplicata(pedidoNovo)) {
                 } else {
@@ -64,10 +69,14 @@ public class Main {
                     System.out.println("Pedido adicionado!");
                 }
 
+                // Listagem de pedidos ja existentes.
             } else if (opcao == 2) {
                 gerenciador.listarPedidos();
+
+                // Remoção de pedidos.
             } else if (opcao == 3) {
                 int idRemover = 0;
+                //Função para verificar se Array pedidos se encontra vazio antes da busca.
                 if (gerenciador.pedidoVazioVerif()) {
                 } else {
                     do {
@@ -87,6 +96,8 @@ public class Main {
                     } else
                         System.out.println("Pedido não encontrado.");
                 }
+
+                // Inicio da opção do gerenciamento dos pedidos.
             } else if (opcao == 4) {
                 int newPedido = 0;
                 do {
@@ -103,7 +114,11 @@ public class Main {
                 } while (newPedido < 0);
 
                 Pedido pedido = gerenciador.buscarPedido(newPedido);
+
                 if (pedido != null) {
+                    System.out.println("(1) Adicionar item");
+                    System.out.println("(2) Avançar status");
+                    System.out.println("(3) Voltar");
 
                 } else {
                     System.out.println("Pedido não encontrado.");
