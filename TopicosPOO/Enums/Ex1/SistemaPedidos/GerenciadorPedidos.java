@@ -11,8 +11,8 @@ public class GerenciadorPedidos {
         if (pedidos.isEmpty()) {
             System.out.println("Não há pedidos.");
         } else {
-            for (int i = 0; i < pedidos.size(); i++) {
-                System.out.printf("Nº:" + pedidos.get(i).getId() + " Mesa " + pedidos.get(i).getMesa() + "%n");
+            for (Pedido pedido : pedidos) {
+                System.out.printf("Nº:" + pedido.getId() + " Mesa " + pedido.getMesa() + "%n");
             }
         }
     }
@@ -36,9 +36,9 @@ public class GerenciadorPedidos {
     }
 
     public Pedido buscarPedido(int ID) {
-        for (int i = 0; i < pedidos.size(); i++) {
-            if (pedidos.get(i).getId() == ID) {
-                return pedidos.get(i);
+        for (Pedido pedido : pedidos) {
+            if (pedido.getId() == ID) {
+                return pedido;
             }
         }
         return null;
@@ -51,8 +51,8 @@ public class GerenciadorPedidos {
     }
 
     public boolean verificarDuplicata(Pedido pedidoNovo) {
-        for (int i = 0; i < pedidos.size(); i++) {
-            if (pedidos.get(i).getMesa() == pedidoNovo.getMesa()) {
+        for (Pedido pedido : pedidos) {
+            if (pedido.getMesa() == pedidoNovo.getMesa()) {
                 System.out.println("Mesa ocupada.");
                 return true;
             }
