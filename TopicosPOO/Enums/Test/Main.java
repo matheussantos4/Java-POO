@@ -1,9 +1,6 @@
-package HerancaPolimorfismo.Enum;
+package TopicosPOO.Enums.Test;
 
 import java.util.Scanner;
-import java.util.Date;
-
-import HerancaPolimorfismo.Enum.StatusPedido;
 
 public class Main {
     public static void main(String[] args) {

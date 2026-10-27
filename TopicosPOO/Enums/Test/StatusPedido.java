@@ -1,4 +1,4 @@
-package HerancaPolimorfismo.Enum;
+package TopicosPOO.Enums.Test;
 
 public enum StatusPedido {
     PENDENTE,
