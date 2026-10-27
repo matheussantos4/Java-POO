@@ -21,7 +21,9 @@ public class BusinessAccount extends Account {
         LoanLimit = loanLimit;
     }
 
-    public void Ioan(double amount) {
-        deposit(amount);
+    public void loan(double amount) {
+        if (amount <= LoanLimit) {
+            deposit(amount);
+        }
     }
 }
