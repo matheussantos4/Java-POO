@@ -1,4 +1,4 @@
-package HerancaPolimorfismo.Ex3.src;
+package HerancaPolimorfismo.Ex3.src.Entities;
 
 public class Account {
 
