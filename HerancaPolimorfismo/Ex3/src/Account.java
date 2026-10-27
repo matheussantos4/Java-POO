@@ -39,4 +39,11 @@ public class Account {
         this.holder = holder;
     }
 
+    public void withDrawn(double amount) {
+        balance -= amount;
+    }
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
 }
