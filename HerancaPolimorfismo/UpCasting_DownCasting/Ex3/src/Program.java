@@ -21,14 +21,13 @@ public class Program {
         double value = sc.nextDouble();
         acc1.deposit(value);
         System.out.println("Novo saldo: R$" + acc1.getBalance());
-        
+
         if (acc3 instanceof BusinessAccount acc4) {
             acc4.loan(1000);
             System.out.println("Loan!");
         }
 
-        if (acc2 instanceof SavingsAccount) {
-            SavingsAccount acc4 = (SavingsAccount) acc2;
+        if (acc2 instanceof SavingsAccount acc4) {
             acc4.updateBalance();
             System.out.println("Update!");
         }
