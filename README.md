@@ -1,109 +1,61 @@
 # Java POO
 
-## Visão geral
+Repositório de exercícios, estudos e pequenos projetos desenvolvidos durante o aprendizado de Java e Programação Orientada a Objetos. Os exemplos praticam conceitos da linguagem por meio de programas simples, em geral executados pelo console.
 
-Este repositório reúne exercícios, estudos e mini projetos em Java focados em Programação Orientada a Objetos. A ideia é
-praticar os conceitos fundamentais da linguagem e reforçar a aplicação de classes, objetos, encapsulamento, herança,
-polimorfismo, coleções, métodos estáticos e tratamento de exceções.
+## Organização
 
-## Objetivos
+### `Arrays/`
 
-- Fixar os pilares da POO em Java
-- Praticar lógica de programação com classes e objetos
-- Explorar estruturas como arrays, ArrayList e laços de repetição
-- Estudar herança, polimorfismo e encapsulamento em cenários reais
-- Trabalhar com validação, entrada de dados e erros em execução
+Exercícios com arrays e coleções: agenda de contatos, uso de `ArrayList`, laços `forEach` e testes de manipulação e acesso a arrays.
 
-## Estrutura do repositório
+### `EncapsulamentoConstrutores/`
 
-### 1. Arrays
+Exemplos de modelagem com atributos, construtores e métodos, incluindo cadastro de alunos de academia, funcionários, veículos e alunos de uma turma.
 
-Pasta: Arrays
+### `HerancaPolimorfismo/`
 
-Conteúdo:
+- `Ex1/`: classe abstrata `Animal` e subclasses `Cachorro` e `Gato`, com sobrescrita de comportamento.
+- `Ex2/`: hierarquia de veículos (`Veiculo`, `Carro` e `Moto`), cálculo de impostos e interface de financiamento.
+- `UpCasting_DownCasting/Ex3/`: contas bancárias, subclasses de conta e conversões verificadas com `instanceof`.
 
-- Agenda de Contatos: cadastro, validação e listagem de contatos
-- ArrayList: estudo de coleções dinâmicas
-- ForEach: utilização de laços avançados para percorrer coleções
-- Testes de relação com arrays: exercícios de manipulação e lógica com índices e estruturas de dados
+### `ProjetosPOOSimples/`
 
-### 2. Encapsulamento e construtores
+Pequenos programas para cálculo de retângulo e triângulo, salário de funcionário, notas de aluno e controle de estoque.
 
-Pasta: EncapsulamentoConstrutores
+### `TopicosPOO/`
 
-Conteúdo:
+- `Enums/`: exemplos de enumerações, estados de pedidos, itens e totalização de pedidos.
+- `MembrosEstaticos/Dollar/`: conversão de moeda com acréscimo de IOF.
+- `MembrosEstaticos/RaioCirculo/`: cálculo de circunferência e volume usando o valor de PI.
 
-- CadastroAcademia: modelagem de aluno com dados pessoais, plano e cálculo de IMC
-- CadastroDeFuncionarios: exercícios sobre atributos, construtores e dados de funcionários
-- CadastroVeiculos: estudos sobre veículos e atributos de cadastro
-- SistemaAlunos: organização e gestão de alunos em uma turma
+### `TryCatch/`
 
-### 3. Herança e polimorfismo
+Exemplo de divisão com tratamento de `ArithmeticException` e `InputMismatchException`.
 
-Pasta: HerancaPolimorfismo
+## Conceitos abordados
 
-Conteúdo:
-
-- Ex1: exemplo com Funcionário e Gerente
-- Ex2: exemplo com Animal, Cachorro e Gato
-- Ex3: exemplo com Veiculo, Carro e Moto, com cálculo de imposto
-
-### 4. Projetos simples de POO
-
-Pasta: ProjetosPOOSimples
-
-Conteúdo:
-
-- retangulo: cálculo de área, perímetro e diagonal
-- Salario: exemplo de classe de funcionário e salário
-- sistemaEstoque: controle de produto e quantidade em estoque
-- sistemaNotas: cálculo de notas e média
-- triangulo: cálculo de área utilizando fórmula de Heron
-
-### 5. Tópicos avançados de POO
-
-Pasta: TopicosPOO
-
-Conteúdo:
-
-- MembrosEstaticos/Dollar: conversor de dólar com cálculo de IOF
-- MembrosEstaticos/RaioCirculo: cálculo de área do círculo e uso de atributos/métodos estáticos
-
-### 6. Tratamento de exceções
-
-Pasta: TryCatch
-
-Conteúdo:
-
-- Estudo1: exemplo de divisão com tratamento para ArithmeticException e InputMismatchException
-
-## Conceitos praticados
-
-- Classes e objetos
-- Encapsulamento
-- Construtores e sobrecarga
-- Getters e setters
-- Herança
-- Polimorfismo
-- Arrays e ArrayList
-- Estruturas de repetição
-- Métodos estáticos
-- Tratamento de exceções
-- Entrada e saída via console
+- Classes, objetos, atributos e métodos
+- Encapsulamento, construtores, getters e setters
+- Herança, classes abstratas, interfaces e polimorfismo
+- Upcasting, downcasting e `instanceof`
+- Arrays, `ArrayList` e laços de repetição
+- Enumerações e estados de pedidos
+- Membros estáticos
+- Entrada e saída pelo console e tratamento de exceções
 
 ## Como executar
 
-1. Abra a pasta do exercício ou projeto desejado em uma IDE Java, como IntelliJ IDEA ou VS Code.
-2. Localize a classe principal com o método main.
-3. Compile e execute o arquivo correspondente.
+Os exemplos são independentes e não há um único ponto de entrada para todo o repositório. Para executar um exercício:
 
-## Tecnologias
+1. Abra o repositório em uma IDE compatível com Java, como IntelliJ IDEA ou VS Code.
+2. Escolha a pasta do exemplo e localize a classe que contém `public static void main(String[] args)`.
+3. Execute essa classe. Os programas que usam `Scanner` podem solicitar dados no console.
 
-- Java
-- Programação Orientada a Objetos
-- Java Collections
-- Estruturas básicas de entrada e saída
+Também é possível compilar e executar pela linha de comando a partir da raiz, respeitando o nome totalmente qualificado da classe. Por exemplo, para `Arrays.ArrayList.Main`:
 
----
+```bash
+javac Arrays/ArrayList/Main.java
+java Arrays.ArrayList.Main
+```
 
-Última atualização: agosto de 2026
+O código usa recursos de Java de versões diferentes; recomenda-se um JDK recente (Java 21 ou superior), especialmente para os métodos `getFirst()` e `getLast()` usados no exemplo de `ArrayList`.
