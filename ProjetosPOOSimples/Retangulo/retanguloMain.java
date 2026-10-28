@@ -1,4 +1,4 @@
-package ProjetosPOOSimples.retangulo;
+package ProjetosPOOSimples.Retangulo;
 
 import java.util.Locale;
 import java.util.Scanner;

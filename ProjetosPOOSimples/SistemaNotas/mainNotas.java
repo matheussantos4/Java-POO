@@ -1,4 +1,4 @@
-package ProjetosPOOSimples.sistemaNotas;
+package ProjetosPOOSimples.SistemaNotas;
 
 import java.util.Scanner;
 import java.util.Locale;

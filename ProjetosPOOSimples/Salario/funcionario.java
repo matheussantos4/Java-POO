@@ -1,4 +1,4 @@
-package ProjetosPOOSimples.salario;
+package ProjetosPOOSimples.Salario;
 
 public class funcionario {
 

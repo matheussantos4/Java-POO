@@ -1,4 +1,4 @@
-package ProjetosPOOSimples.sistemaEstoque;
+package ProjetosPOOSimples.SistemaEstoque;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -9,7 +9,7 @@ public class mainEstoque {
         Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
 
-        Product product = new Product();
+        product product = new product();
 
         // coleta os dados do produto
         System.out.println("Enter product data: ");

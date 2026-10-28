@@ -1,4 +1,4 @@
-package ProjetosPOOSimples.sistemaNotas;
+package ProjetosPOOSimples.SistemaNotas;
 
 public class aluno {
 

@@ -1,4 +1,4 @@
-package ProjetosPOOSimples.retangulo;
+package ProjetosPOOSimples.Retangulo;
 
 public class ret {
 

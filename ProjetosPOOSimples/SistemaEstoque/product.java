@@ -1,6 +1,6 @@
-package ProjetosPOOSimples.sistemaEstoque;
+package ProjetosPOOSimples.SistemaEstoque;
 
-public class Product {
+public class product {
 
     public String name;
     public Double price;
