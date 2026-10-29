@@ -3,7 +3,7 @@ package TopicosPOO.Enums.Ex1.src.SistemaPedidos;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class Main {
+public class Programa {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -115,6 +115,7 @@ public class Main {
 
                 Pedido pedido = gerenciador.buscarPedido(newPedido);
 
+                // Se tiver algo em pedido, entrar nesse menu.
                 if (pedido != null) {
                     int opPedido = 0;
                     do {
