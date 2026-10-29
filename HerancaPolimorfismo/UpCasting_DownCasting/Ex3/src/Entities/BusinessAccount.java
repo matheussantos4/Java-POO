@@ -1,6 +1,6 @@
 package HerancaPolimorfismo.UpCasting_DownCasting.Ex3.src.Entities;
 
-public class BusinessAccount extends Account {
+public final class BusinessAccount extends Account {
 
     private double LoanLimit;
 
