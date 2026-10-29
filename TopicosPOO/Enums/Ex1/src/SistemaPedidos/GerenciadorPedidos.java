@@ -1,10 +1,14 @@
 package TopicosPOO.Enums.Ex1.src.SistemaPedidos;
 
+import TopicosPOO.Enums.Ex2.Product;
+
 import java.util.ArrayList;
 
 public class GerenciadorPedidos {
 
     private ArrayList<Pedido> pedidos = new ArrayList<>();
+    private ArrayList<Produto> produtos = new ArrayList<>();
+    
     private int contador = 1;
 
     public void listarPedidos() {
