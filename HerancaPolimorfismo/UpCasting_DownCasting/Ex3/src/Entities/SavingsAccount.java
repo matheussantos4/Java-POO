@@ -1,6 +1,6 @@
 package HerancaPolimorfismo.UpCasting_DownCasting.Ex3.src.Entities;
 
-public class SavingsAccount extends Account {
+public final class SavingsAccount extends Account {
 
     private double interestRate;
 
