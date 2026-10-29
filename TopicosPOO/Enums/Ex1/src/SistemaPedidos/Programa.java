@@ -135,6 +135,10 @@ public class Main {
                         } else if (opPedido == 2) {
                             StatusPedido anterior = pedido.getStatus();
                             System.out.println("Status atual: " + pedido.getStatus());
+                            if (pedido.getStatus() == StatusPedido.ENTREGUE) {
+                                System.out.println("Pedido já entregue.");
+                                continue;
+                            }
                             pedido.setStatus(anterior.proximo());
                             System.out.println("Status: " + anterior + " -> " + pedido.getStatus());
                         }
