@@ -63,6 +63,10 @@ public class GerenciadorPedidos {
         }
         return false;
     }
+
+    public void adicionarProduto(Produto produto) {
+        produtos.add(produto);
+    }
 }
 
 
