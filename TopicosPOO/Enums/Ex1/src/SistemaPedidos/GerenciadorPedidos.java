@@ -8,7 +8,7 @@ public class GerenciadorPedidos {
 
     private ArrayList<Pedido> pedidos = new ArrayList<>();
     private ArrayList<Produto> produtos = new ArrayList<>();
-    
+
     private int contador = 1;
 
     public void listarPedidos() {
