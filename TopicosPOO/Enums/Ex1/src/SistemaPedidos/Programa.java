@@ -51,15 +51,16 @@ public class Programa {
                     try {
                         System.out.print("Digite o Nº da mesa: ");
                         mesa = sc.nextInt();
-                        if (mesa < 0 || mesa > 50) {
+                        if (mesa <= 0 || mesa > 50) {
                             System.out.println("Mesa inválida.");
+                            sc.nextLine();
                         }
                     } catch (InputMismatchException e) {
                         System.out.println("Mesa inválida.");
                         sc.nextLine();
-                        mesa = 0;
+                        mesa = -1;
                     }
-                } while (mesa < 0 || mesa > 50);
+                } while (mesa <= 0 || mesa > 50);
 
                 // Adição de pedidos a lista caso a mesa esteja de acordo.
                 Pedido pedidoNovo = new Pedido(mesa);
