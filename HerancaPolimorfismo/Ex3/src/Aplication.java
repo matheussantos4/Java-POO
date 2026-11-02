@@ -1,5 +1,13 @@
 package HerancaPolimorfismo.Ex3.src;
 
-public class Aplication {
+import java.util.Scanner;
 
+public class Aplication {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        
+        sc.close();
+    }
 }
