@@ -1,4 +1,4 @@
-package HerancaPolimorfismo.UpCasting_DownCasting.Ex3.src.Entities;
+package HerancaPolimorfismo.UpCasting_DownCasting.Ex3.Entities;
 
 public final class SavingsAccount extends Account {
 

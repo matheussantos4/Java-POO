@@ -1,4 +1,8 @@
-package HerancaPolimorfismo.Ex2;
+package HerancaPolimorfismo.Ex2.src;
+
+import HerancaPolimorfismo.Ex2.entities.Carro;
+import HerancaPolimorfismo.Ex2.entities.Moto;
+import HerancaPolimorfismo.Ex2.entities.Veiculo;
 
 import java.util.Scanner;
 

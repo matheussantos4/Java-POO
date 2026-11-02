@@ -1,4 +1,4 @@
-package HerancaPolimorfismo.Ex1;
+package HerancaPolimorfismo.Ex1.entities;
 
 public abstract class Animal {
     private String nome;

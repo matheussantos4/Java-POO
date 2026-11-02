@@ -1,4 +1,8 @@
-package HerancaPolimorfismo.Ex1;
+package HerancaPolimorfismo.Ex1.src;
+
+import HerancaPolimorfismo.Ex1.entities.Animal;
+import HerancaPolimorfismo.Ex1.entities.Cachorro;
+import HerancaPolimorfismo.Ex1.entities.Gato;
 
 import java.util.Scanner;
 

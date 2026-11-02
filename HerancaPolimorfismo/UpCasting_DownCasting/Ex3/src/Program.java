@@ -1,8 +1,8 @@
 package HerancaPolimorfismo.UpCasting_DownCasting.Ex3.src;
 
-import HerancaPolimorfismo.UpCasting_DownCasting.Ex3.src.Entities.Account;
-import HerancaPolimorfismo.UpCasting_DownCasting.Ex3.src.Entities.BusinessAccount;
-import HerancaPolimorfismo.UpCasting_DownCasting.Ex3.src.Entities.SavingsAccount;
+import HerancaPolimorfismo.UpCasting_DownCasting.Ex3.Entities.Account;
+import HerancaPolimorfismo.UpCasting_DownCasting.Ex3.Entities.BusinessAccount;
+import HerancaPolimorfismo.UpCasting_DownCasting.Ex3.Entities.SavingsAccount;
 
 import java.util.Scanner;
 

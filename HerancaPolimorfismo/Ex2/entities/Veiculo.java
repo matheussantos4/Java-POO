@@ -1,4 +1,4 @@
-package HerancaPolimorfismo.Ex2;
+package HerancaPolimorfismo.Ex2.entities;
 
 public abstract class Veiculo {
 
