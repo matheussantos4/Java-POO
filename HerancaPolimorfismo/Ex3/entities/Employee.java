@@ -6,6 +6,22 @@ public class Employee {
     private Integer hours;
     private Double valuePerHour;
 
+    public static ArrayList<Employee> employees = new ArrayList<>();
+
+    public static void addEmp(Employee emp) {
+        employees.add(emp);
+    }
+
+    public static void remoEmp(Employee emp) {
+        employees.remove(emp);
+    }
+
+    public static void listTotal() {
+        for (Employee emp : employees) {
+            System.out.println(emp.getName() + " " + emp.payment());
+        }
+    }
+
     public Employee(String name, Integer hours, Double valuePerHour) {
         this.name = name;
         this.hours = hours;
