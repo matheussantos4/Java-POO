@@ -5,6 +5,7 @@ public class OutsourcedEmployee extends Employee {
         super(name, hours, valuePerHour);
     }
 
-    private void additionalCharge() {
+    public double additionalCharge(double charge) {
+        return payment() + charge;
     }
 }
