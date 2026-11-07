@@ -1,4 +1,4 @@
-package TopicosPOO.Enums.Ex2;
+package TopicosPOO.Enums.Ex2.entities;
 
 public enum OrderStatus {
     PENDING_PAYMENT(0),

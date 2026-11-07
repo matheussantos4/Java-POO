@@ -1,4 +1,8 @@
-package TopicosPOO.Enums.Ex1.src.SistemaPedidos;
+package TopicosPOO.Enums.Ex1.src;
+
+import TopicosPOO.Enums.Ex1.Entities.GerenciadorPedidos;
+import TopicosPOO.Enums.Ex1.Entities.Pedido;
+import TopicosPOO.Enums.Ex1.Entities.StatusPedido;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

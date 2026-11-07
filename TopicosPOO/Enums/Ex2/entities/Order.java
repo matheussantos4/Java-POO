@@ -1,4 +1,4 @@
-package TopicosPOO.Enums.Ex2;
+package TopicosPOO.Enums.Ex2.entities;
 
 import java.util.ArrayList;
 import java.util.Date;

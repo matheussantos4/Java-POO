@@ -1,6 +1,4 @@
-package TopicosPOO.Enums.Ex1.src.SistemaPedidos;
-
-import TopicosPOO.Enums.Ex2.Product;
+package TopicosPOO.Enums.Ex1.Entities;
 
 import java.util.ArrayList;
 

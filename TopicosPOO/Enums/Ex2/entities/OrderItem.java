@@ -1,4 +1,4 @@
-package TopicosPOO.Enums.Ex2;
+package TopicosPOO.Enums.Ex2.entities;
 
 public class OrderItem {
     private Integer quantity;

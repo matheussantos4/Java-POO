@@ -1,4 +1,4 @@
-package TryCatch.Ex1;
+package Exceptions_TryCatch.Ex1;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -9,7 +9,6 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         try {
-
             int a, b, resultado;
             System.out.println("Divisão Teste.");
             System.out.print("Digite um número: ");

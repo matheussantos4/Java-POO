@@ -1,4 +1,6 @@
-package TopicosPOO.Enums.Ex2;
+package TopicosPOO.Enums.Ex2.src;
+
+import TopicosPOO.Enums.Ex2.entities.*;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
