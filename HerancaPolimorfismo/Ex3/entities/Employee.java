@@ -1,5 +1,7 @@
 package HerancaPolimorfismo.Ex3.entities;
 
+import java.util.ArrayList;
+
 public class Employee {
 
     private String name;
@@ -52,6 +54,12 @@ public class Employee {
         this.name = name;
     }
 
-    public void payment() {
+    public double payment() {
+        return hours * valuePerHour;
+    }
+
+    @Override
+    public String toString() {
+        return "PAYMENTS: " + name + " " + "\n$" + payment();
     }
 }
