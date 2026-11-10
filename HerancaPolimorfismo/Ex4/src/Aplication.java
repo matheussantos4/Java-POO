@@ -1,20 +1,30 @@
 package HerancaPolimorfismo.Ex4.src;
 
+import HerancaPolimorfismo.Ex4.entities.ImportedProduct;
+import HerancaPolimorfismo.Ex4.entities.UsedProduct;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Aplication {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ParseException {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter the number of products: ");
+        System.out.print("Enter the number of products: ");
         int qtdProd = sc.nextInt();
 
         for (int i = 0; i < qtdProd; i++) {
             int numProd = 0;
             numProd++;
-            System.out.println("Product #" + numProd + "data:");
-            System.out.println("Common, used or imported (C/U/I) ?");
-            char Type = sc.nextLine().charAt(1);
+            System.out.println("Product #" + numProd + " data:");
+            System.out.print("Common, used or imported (C/U/I) ? ");
+            char Type = sc.next().toUpperCase().charAt(0);
+            sc.nextLine();
+
+            String name;
+            Double price;
 
             if (Type == 'C') {
 
@@ -47,7 +57,6 @@ public class Aplication {
             }
 
         }
-
 
         sc.close();
     }
