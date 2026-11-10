@@ -11,7 +11,12 @@ public class UsedProduct extends Product {
         this.manufactureDates = manufactureDate;
     }
 
-    private Date manufactureDates;
+    SimpleDateFormat sfd = new SimpleDateFormat("dd/MM/yyyy");
+
+    @Override
+    public String priceTag() {
+        return super.getName() + " (used) $" + super.getPrice() + " Manufacture date: " + sfd.format(manufactureDates);
+    }
 
     public Date getManufactureDate() {
         return manufactureDates;
