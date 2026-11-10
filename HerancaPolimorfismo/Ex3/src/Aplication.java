@@ -3,7 +3,6 @@ package HerancaPolimorfismo.Ex3.src;
 import HerancaPolimorfismo.Ex3.entities.Employee;
 import HerancaPolimorfismo.Ex3.entities.OutsourcedEmployee;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Aplication {
@@ -33,11 +32,6 @@ public class Aplication {
             System.out.print("Value per hour: ");
             vlpHour = sc.nextDouble();
 
-            try {
-
-            } catch (InputMismatchException e) {
-
-            }
             if (op == 'y') {
                 System.out.print("Additional charge: ");
                 double charge = sc.nextDouble();
@@ -51,9 +45,7 @@ public class Aplication {
                 newOne.payment();
             }
         }
-
         Employee.listTotal();
-
         sc.close();
     }
 }
