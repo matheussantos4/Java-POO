@@ -19,6 +19,19 @@ public class Aplication {
             if (Type == 'C') {
 
             } else if (Type == 'U') {
+                Date prodDate = null;
+                String date;
+                System.out.print("Name: ");
+                name = sc.nextLine();
+                System.out.print("Price: ");
+                price = sc.nextDouble();
+                System.out.print("Manufacture Date: ");
+                sc.nextLine();
+                date = sc.nextLine();
+                SimpleDateFormat sfd = new SimpleDateFormat("dd/MM/yyyy");
+                prodDate = sfd.parse(date);
+                UsedProduct newOne = new UsedProduct(name, price, prodDate);
+                System.out.println(newOne.priceTag());
 
             } else if (Type == 'I') {
 
