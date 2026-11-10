@@ -19,8 +19,9 @@ public class Employee {
     }
 
     public static void listTotal() {
+        System.out.println("PAYMENTS: ");
         for (Employee emp : employees) {
-            System.out.println(emp.getName() + " " + emp.payment());
+            System.out.printf(emp.getName() + " - $ " + "%.2f", emp.payment());
         }
     }
 
