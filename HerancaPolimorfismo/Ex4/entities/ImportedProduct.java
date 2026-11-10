@@ -21,4 +21,8 @@ public class ImportedProduct extends Product {
     public void setCustomsFee(double customsFee) {
         this.customsFee = customsFee;
     }
+
+    public double totalPrice() {
+        return super.getPrice() + customsFee;
+    }
 }
