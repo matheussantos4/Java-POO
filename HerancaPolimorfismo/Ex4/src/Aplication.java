@@ -6,6 +6,26 @@ public class Aplication {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
+        System.out.println("Enter the number of products: ");
+        int qtdProd = sc.nextInt();
+
+        for (int i = 0; i < qtdProd; i++) {
+            int numProd = 0;
+            numProd++;
+            System.out.println("Product #" + numProd + "data:");
+            System.out.println("Common, used or imported (C/U/I) ?");
+            char Type = sc.nextLine().charAt(1);
+
+            if (Type == 'C') {
+
+            } else if (Type == 'U') {
+
+            } else if (Type == 'I') {
+                
+            }
+
+        }
+
 
         sc.close();
     }
