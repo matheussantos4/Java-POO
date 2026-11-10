@@ -1,5 +1,6 @@
 package HerancaPolimorfismo.Ex4.entities;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class UsedProduct extends Product {
@@ -24,7 +25,6 @@ public class UsedProduct extends Product {
 
     public void setManufactureDate(Date manufactureDate) {
         this.manufactureDates = manufactureDate;
-
     }
 }
 

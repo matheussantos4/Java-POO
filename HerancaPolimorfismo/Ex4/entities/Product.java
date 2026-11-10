@@ -1,5 +1,7 @@
 package HerancaPolimorfismo.Ex4.entities;
 
+import java.text.ParseException;
+
 public class Product {
 
     private String name;
@@ -26,7 +28,7 @@ public class Product {
         this.price = price;
     }
 
-    public String priceTag() {
+    public String priceTag() throws ParseException {
         return name + " $ " + String.format("%.2f ", price);
     }
 }
