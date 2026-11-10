@@ -31,7 +31,7 @@ public class Aplication {
             System.out.print("Hours: ");
             hours = sc.nextInt();
             System.out.print("Value per hour: ");
-            vlpHour = sc.nextInt();
+            vlpHour = sc.nextDouble();
 
             try {
 
@@ -41,12 +41,12 @@ public class Aplication {
             if (op == 'y') {
                 System.out.print("Additional charge: ");
                 double charge = sc.nextDouble();
-                OutsourcedEmployee newOne = new OutsourcedEmployee(name, hours, vlpHour);
+                OutsourcedEmployee newOne = new OutsourcedEmployee(name, hours, vlpHour, charge);
                 Employee.addEmp(newOne);
-                newOne.additionalCharge(charge);
+                newOne.payment();
 
             } else if (op == 'n') {
-                OutsourcedEmployee newOne = new OutsourcedEmployee(name, hours, vlpHour);
+                Employee newOne = new Employee(name, hours, vlpHour);
                 Employee.addEmp(newOne);
                 newOne.payment();
             }
