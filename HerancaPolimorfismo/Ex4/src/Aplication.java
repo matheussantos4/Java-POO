@@ -21,7 +21,16 @@ public class Aplication {
             } else if (Type == 'U') {
 
             } else if (Type == 'I') {
-                
+
+                System.out.print("Name: ");
+                name = sc.nextLine();
+                System.out.print("Price: ");
+                price = sc.nextDouble();
+                System.out.print("Customs fee: ");
+                double cfee = sc.nextDouble();
+                ImportedProduct newOne = new ImportedProduct(name, price, cfee);
+                newOne.totalPrice();
+                System.out.println(newOne.priceTag());
             }
 
         }
