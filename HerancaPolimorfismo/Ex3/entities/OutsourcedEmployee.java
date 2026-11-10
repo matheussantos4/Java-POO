@@ -1,11 +1,24 @@
 package HerancaPolimorfismo.Ex3.entities;
 
 public class OutsourcedEmployee extends Employee {
-    public OutsourcedEmployee(String name, Integer hours, Double valuePerHour) {
+
+    private double additionalCharge;
+
+    public OutsourcedEmployee(String name, Integer hours, Double valuePerHour, double additionalCharge) {
         super(name, hours, valuePerHour);
+        this.additionalCharge = additionalCharge;
     }
 
-    public double additionalCharge(double charge) {
-        return payment() + charge;
+    public double getAdditionalCharge() {
+        return additionalCharge;
+    }
+
+    public void setAdditionalCharge(double additionalCharge) {
+        this.additionalCharge = additionalCharge;
+    }
+
+    @Override
+    public double payment() {
+        return super.payment() + 1.10 * additionalCharge;
     }
 }
